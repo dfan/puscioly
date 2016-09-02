@@ -79,7 +79,9 @@
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
-@media (max-width: 767) {
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
