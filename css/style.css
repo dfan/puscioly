@@ -4,12 +4,12 @@
   border-color: #0072ab;
   font-size: 1.1em;
   min-height: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .navbar-custom .navbar-brand {
   color: #ffffff;
   font-size: 1.5em;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
@@ -23,8 +23,6 @@
   color: #ffffff;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 .navbar-custom .navbar-nav .lastnav {
   padding-right: 15px;
