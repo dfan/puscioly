@@ -113,8 +113,9 @@ and (max-device-width : 1024px) {
 /* Carousel */
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   width: 100%;
-  max-height: calc(100% - 50px) /* minus the navbar */
+  max-height: calc(100% - 101px) 
 }
+/* minus the navbar */
 .row {
   margin-left: 0px;
   margin-right: 0px;
