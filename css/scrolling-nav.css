@@ -1,0 +1,100 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* NavBar */
+.navbar .navbar-nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar .navbar-nav .lastnav {
+    padding-right: 5vh;
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+/* get rid of horizontal scrollbar at 100% width */
+.row {
+  margin-left: 0px; 
+  margin-right: 0px;
+}
+
+.home-section {
+    height: 100%;
+    padding-top: 60px;
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    /* height: 100%; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background: #19939c; /*eee */
+    color: white;
+}
+
+.news-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #b30000;
+    color: white;
+}
+
+.info-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #3385ff;
+    color: white;
+}
+
+.register-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #ff9900;
+}
+
+.team-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.team-section h4, h1 {
+    text-align: center;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    height: 90%;
+    max-height: 90%; 
+}

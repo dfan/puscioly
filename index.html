@@ -1,101 +1,264 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Homepage of Princeton University Science Olympiad">
+  <meta name="keywords" content="Princeton University, Science Olympiad, Invitational">
+  <meta name="author" content="David Fan">
 
-  <title>Princeton University Science Olympiad</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Princeton University SciOly homepage">
-  <meta name="author" content="SitePoint">
-  <meta name="keywords" content="Princeton University, Science Olympiad">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <title>Science Olympiad at Princeton University</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script>
-    $('#welcomeText').css({position:'absolute', top: 00, left: $(window).width() / 2, zIndex:10});
-  </script>
+  <link href="css/scrolling-nav.css" rel="stylesheet">
 </head>
 
-<body>
-  <!-- style gets rid of the extra white space above -->
-  <nav class="navbar navbar-static-top navbar-custom" style="margin-bottom: 0; border: 0">
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="nav">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type = "button" class = "navbar-toggle" 
-          data-toggle = "collapse" data-target = "#navbar-collapse">
-          <span class = "sr-only">Toggle navigation</span>
-          <span class = "icon-bar"></span>
-          <span class = "icon-bar"></span>
-          <span class = "icon-bar"></span>
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html" style="padding-left:30px;">PRINCETON UNIVERSITY SCIENCE OLYMPIAD</a>
+        <a class="navbar-brand page-scroll" href="#page-top" style="padding-left:5vh;">Science Olympiad @ Princeton University</a>
       </div>
-      <div class = "collapse navbar-collapse" id = "navbar-collapse">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#"><i class="fa fa-home"></i> HOME</a></li>
-          <li><a href="#"><i class="fa fa-info-circle"></i> ABOUT</a></li>
-          <li><a href="#"><i class="fa fa-newspaper-o"></i> NEWS</a></li> 
-          <li><a href="#"><i class="fa fa-question-circle"></i> TOURNAMENT INFO</a></li>
-          <li><a href="#"><i class="fa fa-pencil"></i> REGISTER</a></li>
-          <li class = "lastnav"><a href="#"><i class="fa fa-envelope"></i> CONTACT US</a></li> 
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li><a class="page-scroll" href="#page-top"><i class="fa fa-home"></i> HOME</a></li>
+            <li><a class="page-scroll" href="#about"><i class="fa fa-info-circle"></i> ABOUT</a></li>
+            <li><a class="page-scroll" href="#news"><i class="fa fa-newspaper-o"></i> NEWS</a></li>
+            <li><a class="page-scroll" href="#info"><i class="fa fa-question-circle"></i> TOURNAMENT INFO</a></li>
+            <li><a class="page-scroll" href="#register"><i class="fa fa-pencil"></i> REGISTER</a></li>
+            <li><a class="page-scroll" href="#team"><i class="fa fa-users"></i> ORGANIZING TEAM</a></li>
+            <li class = "lastnav"><a class="page-scroll" href="#"><i class="fa fa-envelope"></i> CONTACT US</a></li>
         </ul>
       </div>
+      <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container -->
   </nav>
 
   <div class="container-fluid" style="padding:0; margin:0;">
     <div class="row">
-      <div class="col-sm-4" style="text-align:center; margin: 0 auto; float: none;">
-        <div class="welcomeText" style="position:absolute; z-index:10; width: 100%; background-color: black;">
-          <h3 style="text-align: center; color: white"> To be held on January _, 2017. </h3>
-          <button type="button" class="btn btn-danger" style="display: block; margin: 0 auto;">Register Now!</button>
-          <br>
-        </div>
-      </div>
-      <!-- Slideshow shifted up 1 pixel because the box above makes this weird half pixel wide line -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style="position: relative; top: -0.5px">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>
+      <!-- Intro Section -->
+      <section id="home" class="home-section" style="padding:0; margin:0;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="img/princeton1.jpg" alt="">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/princeton1.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="img/princeton2.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="img/princeton3.jpg" alt="">
+            </div>
+            <div class="item">
+              <img src="img/princeton4.jpg" alt="Frick Laboratory">
+            </div>
+            <div class="item">
+              <img src="img/princeton5.jpg" alt="Carl Icahn Laboratory">
+            </div>
           </div>
-          <div class="item">
-            <img src="img/princeton2.jpg" alt="">
-          </div>
-          <div class="item">
-            <img src="img/princeton3.jpg" alt="">
-          </div>
-          <div class="item">
-            <img src="img/princeton4.jpg" alt="Frick Laboratory">
-          </div>
-          <div class="item">
-            <img src="img/princeton5.jpg" alt="Carl Icahn Laboratory">
-          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>To be held on January x, 2016</h2>
+            <a class="btn btn-default btn-danger page-scroll" href="#about">Register Now!</a>
+            <br><br>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8" style="margin: 0 auto; float: none;">
+          <div class="row">
+            <h1 style="color: white">About Us</h1>
+            <br>
+            <p style="color: white; text-align: left;">Science Olympiad at Princeton University is a student group that will be hosting the first-ever Princeton University Science Olympiad Invitational in January 2017. Founded by Edison Lee '19 and David Fan '19, the group hopes to provide both new and experienced teams across the nation with a high-quality invitational experience. While many teams in the Northeast attend invitationals prior to competing at their regional and state competitions, teams from New Jersey often do not have this luxury, as historically only one invitational tournament is held locally (the Cougar Invitational at Montgomery High School). By hosting the Princeton University Science Olympiad Invitational, we hope to not only provide additional competition experience for teams of all backgrounds, but also help expand local New Jersey Science Olympiad programs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+
+  <!-- News Section -->
+  <section id="news" class="news-section">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>News</h1>
+        <br>
+        <div class="col-lg-8" style="margin: 0 auto; float: none;">
+          None yet!
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+
+  <!-- Info Section -->
+  <section id="info" class="info-section">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Info</h1>
+        <br>
+        <div class="col-lg-8" style="margin: 0 auto; float: none;">
+          Rules
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+
+  <!-- Register Section -->
+  <section id="register" class="register-section">
+    <div class="container-fluid">
+      <div class="row">
+        <h1>Register Now!</h1>
+        <br>
+        <div class="col-lg-8" style="margin: 0 auto; float: none;">
+          Click this link:
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8" style="margin: 0 auto; float: none;">
+          <h1>2016-2017 Organizing Team</h1>
+          <br>
+          <div class="row">
+            <div class="col-lg-6" style="padding: 0">
+              <div class="row">
+                <div class="col-lg-4" style="padding: 0">
+                  <img class="img-responsive" src="img/headshots/david.jpg" alt="">
+                  <h4> Director </h4>
+                  <h4> David Fan '19 </h4>
+                </div>
+                <div class="col-lg-8">
+                  <p style="text-align: left;">SciOly occupied every waking hour of David's time from middle school to high school, and he hopes that other people will be able to grow as much from their SciOly experiences as much as he did. In his senior year of high school, David served as tournament director for New Jersey's first-ever Science Olympiad invitational tournament, held at Montgomery High School. Last year, David and Eddie supervised the "Green Generation" event at MIT's 2016 Science Olympiad Invitational. David hopes to translate his seven-plus years of experience with Science Olympiad into creating an amazing invitational experience for everyone.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" style="padding: 0">
+              <div class="row">
+                <div class="col-lg-4" style="padding: 0">
+                  <img class="img-responsive" src="img/headshots/eddie.png" alt="">
+                  <h4> Director </h4>
+                  <h4> Edison (Eddie) Lee '19 </h4>
+                </div>
+                <div class="col-lg-8">
+                  <p style="text-align: left;">Eddie is cool and everyone knows it! Eddie's from WWP-North!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6" style="padding-left: 0">
+              <img class="img-responsive" src="img/headshots/sample.png" alt="" style="height: 314px">
+              <h4> Logistics </h4>
+              <h4> Some Person </h4>
+              <p style="text-align: left;"> Not even on the team yet but excited!</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6" style="padding-left: 0">
+              <img class="img-responsive" src="img/headshots/sample.png" alt="" style="height: 314px">
+              <h4> Volunteer Coordinator </h4>
+              <h4> Some Person </h4>
+              <p style="text-align: left;"> Not even on the team yet but excited!</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6" style="padding-left: 0">
+              <img class="img-responsive" src="img/headshots/sample.png" alt="" style="height: 314px">
+              <h4> Sponsors</h4>
+              <h4> Some Person </h4>
+              <p style="text-align: left;"> Not even on the team yet but excited!</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6" style="padding-left: 0">
+              <img class="img-responsive" src="img/headshots/sample.png" alt="" style="height: 314px">
+              <h4> Event Coordinator </h4>
+              <h4> Some Person </h4>
+              <p style="text-align: left;"> Not even on the team yet but excited!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $("#nav ul li a, #nav div a").on('click', function(e) {
+        // prevent default anchor click behavior
+         e.preventDefault();
+        // store hash
+        var hash = this.hash;
+        // animate
+        
+        $('html, body').stop().animate({
+           'scrollTop': $(hash).offset().top
+         }, 500, 'swing', function () {
+            window.location.hash = hash;
+            if (hash === '#page-top') { /* remove hash if at top */
+              window.location.href.split('#')[0]
+              history.pushState("", document.title, window.location.pathname);
+            }
+         });        
+      });
+    });
+  </script>
 </body>
+
 </html>
