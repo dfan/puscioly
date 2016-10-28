@@ -75,8 +75,9 @@ $(document).ready(function (){
     $('nav li a').navScroller();
 
     //section divider icon click gently scrolls to reveal the section
+    // editted to remove gentle scroll (no delay)
 	$(".sectiondivider").on('click', function(event) {
-    	$('html,body').animate({scrollTop: $(event.target.parentNode).offset().top - 50}, 400, "linear");
+    	$('html,body').animate({scrollTop: $(event.target.parentNode).offset().top - 50}, 50, "easeInOutExpo");
 	});
 
     //links going to other sections nicely scroll

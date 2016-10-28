@@ -508,10 +508,10 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-contact { border-color: #f8f8f8; }
-  #contact { background-color: #f8f8f8 !important; color: #111111; }
+  nav .p-contact { border-color: #0fbfcf; }
+  #contact { background-color: #0fbfcf !important; color: #111111; }
   #contact a { color: #111111; }
-  #contact .sectiondivider { color: #f8f8f8; }
+  #contact .sectiondivider { color: #0fbfcf; }
 
   
   
