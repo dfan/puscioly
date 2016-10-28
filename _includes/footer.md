@@ -1,3 +1,2 @@
 
-this site is [open source]({{ site.source_link }})
-
+Princeton University Science Olympiad 2016-2017.

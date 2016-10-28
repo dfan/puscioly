@@ -20,7 +20,7 @@ $.extend($.easing,
     $.fn.navScroller = function(options) {
         settings = $.extend({
             scrollToOffset: 170,
-            scrollSpeed: 800,
+            scrollSpeed: 300,
             activateParentNode: true,
         }, options );
         navItems = this;
@@ -33,7 +33,7 @@ $.extend($.easing,
             activateNav(navID);
             populateDestinations(); //recalculate these!
         	$('html,body').animate({scrollTop: sections[navID] - settings.scrollToOffset},
-                settings.scrollSpeed, "easeInOutExpo", function(){
+                settings.scrollSpeed, "linear", function(){
                     disableScrollFn = false;
                 }
             );
@@ -75,9 +75,8 @@ $(document).ready(function (){
     $('nav li a').navScroller();
 
     //section divider icon click gently scrolls to reveal the section
-    // editted to remove gentle scroll (no delay)
 	$(".sectiondivider").on('click', function(event) {
-    	$('html,body').animate({scrollTop: $(event.target.parentNode).offset().top - 50}, 50, "easeInOutExpo");
+    	$('html,body').animate({scrollTop: $(event.target.parentNode).offset().top - 50}, 300, "linear");
 	});
 
     //links going to other sections nicely scroll
@@ -86,8 +85,9 @@ $(document).ready(function (){
             $(this).on('click', function(event) {
         		event.preventDefault();
                 var target = $(event.target).closest("a");
-                var targetHight =  $(target.attr("href")).offset().top
-            	$('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo");
+                var targetHeight =  $(target.attr("href")).offset().top
+                // if you want delay, use "easeInOutExpo" + adjust parameters in navScroller() function
+            	$('html,body').animate({scrollTop: targetHeight - 170}, 300, "linear");
             });
         }
 	});
