@@ -15,13 +15,14 @@ markdown: kramdown
 
 ### content configuration ###
 title:       "Princeton University Science Olympiad Invitational"
-keywords:    "Princeton, University, Science Olympiad, Invitational"
-description: "Registration and information site about Princeton University's Science Olympiad Invitational"
+keywords:    "princeton, invitational, princeton science olympiad, scioly, princeton, university, science olympiad"
+description: "Home page of Princeton University's Science Olympiad Invitational Tournament"
+url:         "www.princeton.edu/~scioly"
 source_link: "https://github.com/dfan97/puscioly"
 facebook_link: "https://www.facebook.com/princetonuniversityscioly/"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key: UA-49607422-1 ## put YOUR key here to enable tracking! (blank to disable)
+google_analytics_key: UA-86590201-1
 
 
 ### template colors, used site-wide via css ###
@@ -36,4 +37,3 @@ colors:
 
 kramdown:
   auto_ids:  false
-
