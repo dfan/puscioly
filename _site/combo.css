@@ -524,6 +524,14 @@ html { box-sizing: border-box; }
   
   
   
+  nav .p-news { border-color: #c869bf; }
+  #news { background-color: #c869bf !important; color: #f8f8f8; }
+  #news a { color: #f8f8f8; }
+  #news .sectiondivider { color: #c869bf; }
+
+  
+  
+  
   nav .p-registration { border-color: #fab125; }
   #registration { background-color: #fab125 !important; color: #111111; }
   #registration a { color: #111111; }

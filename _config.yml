@@ -14,13 +14,13 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "Princeton University Science Olympiad Invitational"
-keywords:    "princeton, invitational, princeton science olympiad, scioly, princeton, university, science olympiad"
-description: "Home page of Princeton University's Science Olympiad Invitational Tournament"
+title:       "Science Olympiad at Princeton"
+keywords:    "princeton, science olympiad, scioly, invitational, university"
+description: "Home page of this year's Princeton University Science Olympiad Invitational, upcoming on February 4th, 2017. Find out more about the tournament or register here."
 url:         "www.princeton.edu/~scioly"
 source_link: "https://github.com/dfan97/puscioly"
 facebook_link: "https://www.facebook.com/princetonuniversityscioly/"
-favicon:     "img/favicon.ico"
+favicon:     "img/Princeton_shield.png"
 touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key: UA-86590201-1
 

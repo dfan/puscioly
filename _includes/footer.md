@@ -1,2 +1,1 @@
-
-Princeton University Science Olympiad 2016-2017.
+@2016 The Trustees of Princeton University
