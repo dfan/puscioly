@@ -5,7 +5,7 @@ color: black
 fa-icon: pencil-square-o
 ---
 
-## Ends December 1, 2016
+## Spots Remain!
 
 - Before registering, please make sure that your school is a registered member of your state Science Olympiad program.
 - Each school may register up to two teams of 15. There is a registration fee of $100 per team.

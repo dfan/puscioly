@@ -502,6 +502,11 @@ html { box-sizing: border-box; }
 .text-turquoise a { color: #0fbfcf; }
 .bg-turquoise     { background-color: #0fbfcf !important; }
 
+.border-burgundy { border-color: #b20000 !important; }
+.text-burgundy   { color: #b20000; }
+.text-burgundy a { color: #b20000; }
+.bg-burgundy     { background-color: #b20000 !important; }
+
 
 /* ----- per-post colors! ----- */
 
@@ -512,6 +517,14 @@ html { box-sizing: border-box; }
   #contact { background-color: #0fbfcf !important; color: #111111; }
   #contact a { color: #111111; }
   #contact .sectiondivider { color: #0fbfcf; }
+
+  
+  
+  
+  nav .p-sponsors { border-color: #f8f8f8; }
+  #sponsors { background-color: #f8f8f8 !important; color: #111111; }
+  #sponsors a { color: #111111; }
+  #sponsors .sectiondivider { color: #f8f8f8; }
 
   
   
@@ -528,6 +541,14 @@ html { box-sizing: border-box; }
   #news { background-color: #c869bf !important; color: #f8f8f8; }
   #news a { color: #f8f8f8; }
   #news .sectiondivider { color: #c869bf; }
+
+  
+  
+  
+  nav .p-documents { border-color: #b20000; }
+  #documents { background-color: #b20000 !important; color: #f8f8f8; }
+  #documents a { color: #f8f8f8; }
+  #documents .sectiondivider { color: #b20000; }
 
   
   

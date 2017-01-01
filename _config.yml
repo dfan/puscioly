@@ -20,6 +20,7 @@ description: "Home page of this year's Princeton University Science Olympiad Inv
 url:         "www.princeton.edu/~scioly"
 source_link: "https://github.com/dfan97/puscioly"
 facebook_link: "https://www.facebook.com/princetonuniversityscioly/"
+schedule_link: "http://www.princeton.edu/~scioly/PUSO_Schedule2017.pdf"
 favicon:     "img/Princeton_shield.png"
 touch_icon:  "img/apple-touch-icon.png"
 google_analytics_key: UA-86590201-1
@@ -34,6 +35,7 @@ colors:
   purple:    '#c869bf'
   orange:    '#fab125'
   turquoise: '#0fbfcf'
+  burgundy:  '#b20000'
 
 kramdown:
   auto_ids:  false
