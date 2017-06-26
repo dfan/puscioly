@@ -11,6 +11,9 @@ permalink: /:title ## disables post output
 timezone: null
 lsi: false
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 
 ### content configuration ###
