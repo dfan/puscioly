@@ -41,17 +41,22 @@ body {
   background-color: #15BDFF;
 }
 
-#navbar ul li a.active-page {
-  background-color: #96DCFF;
-}
-
 #navbar > ul > li > a {
   color: white;
   border: 0;
 }
 
+.dropdown-menu {
+  padding: 1px;
+}
+
+/* Gives hover effect */
 li.dropdown:hover > .dropdown-menu {
-    display: block;
+  display: block;
+}
+
+.navbar-default .dropdown-menu > li > a {
+  /*background-color: transparent;*/
 }
 
 /* Avoid propagation to dropdown */
@@ -65,6 +70,10 @@ li.dropdown:hover > .dropdown-menu {
     line-height: 20px;
     height: 40px;
   }
+}
+
+#navbar li.divider {
+  margin: 1px;
 }
 
 .branding {
