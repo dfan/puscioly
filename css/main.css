@@ -56,7 +56,7 @@ li.dropdown:hover > .dropdown-menu {
 }
 
 .navbar-default .dropdown-menu > li > a {
-  /*background-color: transparent;*/
+  /*background-color: transparent; delete hover effect*/
 }
 
 /* Avoid propagation to dropdown */
@@ -76,7 +76,7 @@ li.dropdown:hover > .dropdown-menu {
   margin: 1px;
 }
 
-.branding {
+.logo {
   min-height: 22px;
   height: 22px;
 }
@@ -102,5 +102,5 @@ h1, h2, h3 {
 }
 
 .lead > p {
-  padding: 12x 12px;
+  padding: 12px 12px;
 }
