@@ -104,3 +104,9 @@ h1, h2, h3 {
 .lead > p {
   padding: 12px 12px;
 }
+
+.sponsor-logo {
+  width:90%;
+  margin: auto;
+  display: block;
+}
