@@ -136,12 +136,18 @@ h1, h2, h3 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-#profiles .list-group-item img {
-  height: 236px;
+#profiles .list-group-item .profile-main {
+  padding-bottom: 12px;
+  max-width: 100%;
 }
 
-#profiles .list-group-item .position {
-  margin-top: 80px;
+#profiles .list-group-item img {
+  max-height: 250px;
+}
+
+#profiles .list-group-item .description {
+  padding-left: 24px;
+  display: inline-block;
 }
 
 #profiles .list-group-item .officer-name {
@@ -153,8 +159,7 @@ h1, h2, h3 {
   font-weight: 200;
 }
 
-#profiles .list-group-item .bio-text {
+#profiles .list-group-item .profile-bio {
   font-size: 16px;
   font-weight: 200;
-  padding-top: 24px;
 }
