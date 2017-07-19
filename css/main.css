@@ -9,7 +9,10 @@ body {
 }
 
 .navbar {
-  background-color: #00AFFF;
+  background-color: #555555;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  /* background-color: #00AFFF; */
   border: 0;
 }
 
@@ -28,6 +31,7 @@ body {
   background-color: #FFFFFF;
 }
 
+/* Collapsible three bar button */
 .navbar-default .navbar-toggle:hover {
   background-color: #66CFFF;
 }
@@ -38,7 +42,8 @@ body {
 }
 
 #navbar > ul > li > a:hover {
-  background-color: #15BDFF;
+  background-color: #414141;
+  /* background-color: #15BDFF; */
 }
 
 #navbar > ul > li > a {
@@ -98,7 +103,16 @@ h1, h2, h3 {
 }
 
 .section-title {
+  font-size: 42px;
+}
+
+.home-title {
   font-size: 54px;
+  display: inline;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 .lead > p {
@@ -156,10 +170,10 @@ h1, h2, h3 {
 
 #profiles .list-group-item .officer-title {
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 #profiles .list-group-item .profile-bio {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
 }
