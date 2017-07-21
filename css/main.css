@@ -3,6 +3,16 @@ html, body {
   height: 100%;
 }
 
+.btn {
+  background-image: none;
+  border: none;
+  letter-spacing: 1px;
+  text-decoration: none ! important;
+  text-shadow: none;
+  transition: all 0.1s ease-in-out 0s;    
+  -webkit-transition: all 0.1s ease-in-out 0s;  
+}
+
 body {
   /* Default to system font if custom font not supported */
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -53,6 +63,11 @@ body {
 
 .dropdown-menu {
   padding: 1px;
+}
+
+/* Fixes dropdown click color issue */
+.nav .open > a, .navbar-default .nav .open>a:hover, .navbar-default .nav .open > a:focus {
+  background-color: transparent;
 }
 
 /* Gives hover effect */
