@@ -8,6 +8,16 @@
     <meta name="keywords" content="princeton, science olympiad, scioly, scio, so, invitational, tournament, university">
     <meta name="description" content="Science Olympiad invitational tournament run by Princeton University students. Coming February 3rd, 2018.">
 
+    <!-- CSS Implementing Countdown Plugin -->
+    <link rel="stylesheet" href="css/countdown/style.css" >
+    <link rel="stylesheet" href="css/countdown/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/countdown/ionicons.min.css" />
+    <link rel="stylesheet" href="css/countdown/animate.min.css" />
+    <link rel="stylesheet" href="css/countdown/flexslider.css" />
+    <link rel="stylesheet" href="css/countdown/owl.carousel.css" />
+    <link rel="stylesheet" href="css/countdown/owl.theme.css" />
+    <link rel="stylesheet" href="css/countdown/vegas.min.css" />
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -18,6 +28,10 @@
     <!-- Latest compiled and minified JavaScript: must load JQuery before Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- JS implementing countdown plugin -->
+    <script type="text/javascript" src="js/countdown/modernizr.js"></script>
+    <script type="text/javascript" src="js/countdown/snap.svg-min.js"></script>
 
     <link rel="canonical" href="http://princetonscioly.org/">
     <!-- Favicons for life -->
@@ -43,7 +57,12 @@
     <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png" />
   </head>
 
-  <body>
+  <body class="image-background">
+    <!-- Preloader -->
+    <div id="preloader">
+    <div id="loading-animation">&nbsp;</div>
+    </div>
+    <!-- /Preloader -->
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container-fluid">
@@ -75,25 +94,60 @@
           </div>
         </div>
     </nav>
+    <div id="section-home" class="home-section-wrap center">
+      <div class="section-overlay"></div>
+    </div>
 
-    <!-- Logo goes here -->
-    <!-- <div class = "splash">
-      <h3>Coming 2018 to Princeton University</h3>
-    </div> -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-8 text-center">
-          <h1 class="home-title">Princeton University</h1><br>
-          <h1 class="home-title">Science Olympiad Invitational</h1>
-          <h3>February 10, 2018</h3><br>
-          <a href="about.html"><button type="button" class="btn btn-danger">Learn more</button></a>
-        </div>
-        <div class="col-lg-2">
+    <div class="home-container">
+      <!-- Logo goes here -->
+      <!-- <div class = "splash">
+        <h3>Coming 2018 to Princeton University</h3>
+      </div> -->
+      <section class="section fullscreen site-main">
+      <div class="container-section">
+      <div class="container-table">
+      <div class="content-table">
+      <!-- bt-carousel -->
+      <div class="bt-carousel">
+
+      <!-- home section -->
+      <div class="item-slide show">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="content-slide">
+              <h1 class="home-title">Princeton University</h1><br>
+              <h1 class="home-title">Science Olympiad Invitational</h1>
+              <h3>Coming on February 10, 2018</h3><br>
+              <div id="clock-countdown" class="animated bounceInDown" data-animation-delay="700"></div>
+              <a href="about.html"><button type="button" class="btn btn-danger">Learn more</button></a>
+            </div>
+          </div>
         </div>
       </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
     </div>
+    <!-- JS for countdown plugin-->
+    <!-- Needed for weird error caused by newer jquery -->
+    <script type="text/javascript" src="js/countdown/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.parallaxify.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.particleground.min.js"></script>
+    <script type="text/javascript" src="js/countdown/vegas.min.js"></script>
+    <script type="text/javascript" src="js/countdown/trianglify.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.mb.YTPlayer.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/countdown/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/countdown/classie.js"></script>
+    <script type="text/javascript" src="js/countdown/main.js"></script>
   </body>
 
 </html>
