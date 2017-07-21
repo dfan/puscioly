@@ -26,6 +26,10 @@ body {
   border: 0;
 }
 
+.navbar-brand {
+  display: none;
+}
+
 .navbar-collapse {
   text-align: left;
 }
@@ -45,7 +49,7 @@ body {
 
 /* Collapsible three bar button */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #414141;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar-default .navbar-collapse {
@@ -95,11 +99,32 @@ li.dropdown:hover > .dropdown-menu {
   height: 60px;
 }
 
+#navbar li.divider {
+  margin: 1px;
+}
+
+.logo {
+  min-height: 22px;
+  height: 22px;
+}
+
 @media (max-width: 767px) {
   #navbar ul > li > a {
     line-height: 20px;
     height: 40px;
     width: 767px;
+  }
+
+  .navbar-brand {
+    display: block;
+  }
+
+  .navbar-brand img {
+    height: 22px;
+  }
+
+  .navbar-brand-collapse {
+    display: none !important;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu {
@@ -126,15 +151,6 @@ li.dropdown:hover > .dropdown-menu {
   .navbar-default .navbar-nav .open .dropdown-menu .divider {
     display: none;
   }
-}
-
-#navbar li.divider {
-  margin: 1px;
-}
-
-.logo {
-  min-height: 22px;
-  height: 22px;
 }
 
 h1, h2, h3 {
