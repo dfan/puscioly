@@ -46,50 +46,49 @@
   <body>
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="navbar" class="navbar-collapse navbar-center collapse">
-            <ul class="nav navbar-nav">
-              <!-- disable hover effect on logo -->
-              <li><a href="index.html" style = "background-color: transparent;"><img src="img/logo.png" class="logo"></a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="info.html">TOURNAMENT INFORMATION</a></li>
-              <li><a href="updates.html">UPDATES</a></li>
-              <li><a href="team.html">THE TEAM</a></li>
-              <li><a href="partners.html">PARTNERS</a></li>
-              <li class="dropdown"><a href="past" data-toggle="dropdown" class="dropdown-toggle">ARCHIVE <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="past-tests.html">All Tests</a></li>
-                  <li class="divider"></li>
-                  <li><a href="past/2017/index.html">2017</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
+        <div id="navbar" class="navbar-collapse navbar-center collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="info.html">Tournament Information</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li class="dropdown"><a href="past" data-toggle="dropdown" class="dropdown-toggle">Archive <b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="past-tests.html" style="margin: 0">All Tests</a></li>
+                <li class="divider"></li>
+                <li><a href="past/2017/index.html">2017 Site</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <div class="container">
+    <div class="container content">
       <h1 class="section-title">LEADERSHIP</h1>
       <div id="profiles">
-        <h2>Tournament Directors</h2>
+        <h2 class="section-subtitle">Tournament Directors</h2>
         <div class="row">
-          <div class="col-sm-12">
-            <p>Will and Shirley are responsible for overseeing all aspects of the competition!</p>
+          <div class="col-md-12">
+            <p class="section-description">Will and Shirley are responsible for overseeing all aspects of the competition!</p>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#will-jiao-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/will.jpg" alt="William Jiao">
                   <div class="description">
-                    <div class="officer-name">William Jiao '20</div>
+                    <div class="profile-name">William Jiao '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="will-jiao-bio">
@@ -99,13 +98,13 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#shirley-zhang-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/shirley.png" alt="Shirley Zhang">
                   <div class="description">
-                    <div class="officer-name">Shirley Zhang '20</div>
+                    <div class="profile-name">Shirley Zhang '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="shirley-zhang-bio">
@@ -118,18 +117,18 @@
           </div>
         </div>
 
-        <h2>Directors Emeritus</h2>
+        <h2 class="section-subtitle">Directors Emeritus</h2>
         <div class="row">
-        <div class="col-sm-12">
-            <p>After directing the tournament last year, David and Eddie are taking on an advisory role this year!</p>
+        <div class="col-md-12">
+            <p class="section-description">After directing the tournament last year, David and Eddie are taking on an advisory role this year!</p>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#david-fan-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/david.jpg" alt="David Fan">
                   <div class="description">
-                    <div class="officer-name">David Fan '19</div>
+                    <div class="profile-name">David Fan '19</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="david-fan-bio">
@@ -138,13 +137,13 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#edison-lee-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/eddie.jpg" alt="Edison Lee">
                   <div class="description">
-                    <div class="officer-name">Edison Lee '19</div>
+                    <div class="profile-name">Edison Lee '19</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="edison-lee-bio">
@@ -155,19 +154,19 @@
           </div>
         </div>
 
-        <h2>Content Committee</h2>
+        <h2 class="section-subtitle">Content Committee</h2>
         <div class="row">
-          <div class="col-sm-12">
-            <p>The Content Committee is responsible for revising all tests for content, difficulty spread, relevancy and scorability, as well working with event supervisors to ensure all events have the materials and setups needed.</p>
+          <div class="col-md-12">
+            <p class="section-description">The Content Committee is responsible for revising all tests for content, difficulty spread, relevancy and scorability, as well working with event supervisors to ensure all events have the materials and setups needed.</p>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#yusha-sun-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/yusha.png" alt="Yusha Sun">
                   <div class="description">
-                    <div class="officer-name">Yusha Sun '20</div>
-                    <div class="officer-title">Chemistry Events</div>
+                    <div class="profile-name">Yusha Sun '20</div>
+                    <div class="profile-title">Chemistry Events</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="yusha-sun-bio">
@@ -176,14 +175,14 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#bill-huang-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/bill.jpg" alt="Bill Huang">
                   <div class="description">
-                    <div class="officer-name">Bill Huang '19</div>
-                    <div class="officer-title">Earth Science Events</div>
+                    <div class="profile-name">Bill Huang '19</div>
+                    <div class="profile-title">Earth Science Events</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="bill-huang-bio">
@@ -194,14 +193,14 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#cam-on-nguyen-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/placeholder.png" alt="Cam On Nguyen">
                   <div class="description">
-                    <div class="officer-name">Cam On Nguyen '20</div>
-                    <div class="officer-title">Biology Events</div>
+                    <div class="profile-name">Cam On Nguyen '20</div>
+                    <div class="profile-title">Biology Events</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="cam-on-nguyen-bio">
@@ -210,14 +209,14 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#seth-lovelace-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/placeholder.png" alt="Seth Lovelace">
                   <div class="description">
-                    <div class="officer-name">Seth Lovelace '20</div>
-                    <div class="officer-title">Building Events</div>
+                    <div class="profile-name">Seth Lovelace '20</div>
+                    <div class="profile-title">Building Events</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="seth-lovelace-bio">
@@ -228,17 +227,17 @@
           </div>
         </div>
 
-        <h2>Logistics Committee</h2>
-        <p>The Logistics Committee is responsible for ensuring that all logistical aspects of the competition run smoothly, from team check-in to food, t-shirts, room allocation, event material distribution, awards, grading, volunteers, etc.</p>
+        <h2 class="section-subtitle">Logistics Committee</h2>
+        <p class="section-description">The Logistics Committee is responsible for ensuring that all logistical aspects of the competition run smoothly, from team check-in to food, t-shirts, room allocation, event material distribution, awards, grading, volunteers, etc.</p>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#reilly-bova-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/reilly.jpg" alt="Reilly Bova">
                   <div class="description">
-                    <div class="officer-name">Reilly Bova '20</div>
-                    <div class="officer-title">Director</div>
+                    <div class="profile-name">Reilly Bova '20</div>
+                    <div class="profile-title">Director</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="reilly-bova-bio">
@@ -247,13 +246,13 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#manasseh-alexander-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/manasseh.jpg" alt="Manasseh Alexander">
                   <div class="description">
-                    <div class="officer-name">Manasseh Alexander '20</div>
+                    <div class="profile-name">Manasseh Alexander '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="manasseh-alexander-bio">
@@ -264,13 +263,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#bertha-wang-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/bertha.png" alt="Bertha Wang">
                   <div class="description">
-                    <div class="officer-name">Bertha Wang '18</div>
+                    <div class="profile-name">Bertha Wang '18</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="bertha-wang-bio">
@@ -281,17 +280,17 @@
           </div>
         </div>
 
-        <h2>Finance Committee</h2>
-        <p>The Finance Committee is responsible for landing sponsorships, and ordering and tracking expenses.</p>
+        <h2 class="section-subtitle">Finance Committee</h2>
+        <p class="section-description">The Finance Committee is responsible for landing sponsorships, and ordering and tracking expenses.</p>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#audrey-shih-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/audrey.png" alt="Audrey Shih">
                   <div class="description">
-                    <div class="officer-name">Audrey Shih '20</div>
-                    <div class="officer-title">Director</div>
+                    <div class="profile-name">Audrey Shih '20</div>
+                    <div class="profile-title">Director</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="audrey-shih-bio">
@@ -301,14 +300,14 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#juneho-park-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/june-ho.jpg" alt="June-Ho Park">
                   <div class="description">
-                    <div class="officer-name">June-Ho Park '20</div>
-                    <div class="officer-title">Treasurer</div>
+                    <div class="profile-name">June-Ho Park '20</div>
+                    <div class="profile-title">Treasurer</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="juneho-park-bio">
@@ -319,13 +318,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#ariel-chen-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/ariel.png" alt="Ariel Chen">
                   <div class="description">
-                    <div class="officer-name">Ariel Chen '20</div>
+                    <div class="profile-name">Ariel Chen '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="ariel-chen-bio">
@@ -335,13 +334,13 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#akhil-rajasekar-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/placeholder.png" alt="Akhil Rajasekar">
                   <div class="description">
-                    <div class="officer-name">Akhil Rajasekar '20</div>
+                    <div class="profile-name">Akhil Rajasekar '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="akhil-rajasekar-bio">
@@ -352,17 +351,17 @@
           </div>
         </div>
 
-        <h2>Communications</h2>
-        <p>The Communications Committee is responsible for managing our outreach to teams via email and social media, as well as liasoning with departments on campus to ensure that all parties are well informed about tournament.</p>
+        <h2 class="section-subtitle">Communications</h2>
+        <p class="section-description">The Communications Committee is responsible for managing our outreach to teams via email and social media, as well as liasoning with departments on campus to ensure that all parties are well informed about tournament.</p>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#annie-zou-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/annie.jpg" alt="Annie Zou">
                   <div class="description">
-                    <div class="officer-name">Annie Zou '20</div>
-                    <div class="officer-title">Director</div>
+                    <div class="profile-name">Annie Zou '20</div>
+                    <div class="profile-title">Director</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="annie-zou-bio">
@@ -373,14 +372,14 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#yunah-kim-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/yunah.jpg" alt="Yunah Kim">
                   <div class="description">
-                    <div class="officer-name">Yunah Kim '20</div>
-                    <div class="officer-title">Director and Design Lead</div>
+                    <div class="profile-name">Yunah Kim '20</div>
+                    <div class="profile-title">Director and Design Lead</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="yunah-kim-bio">
@@ -393,13 +392,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#sanna-lee-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/sanna.png" alt="Sanna Lee">
                   <div class="description">
-                    <div class="officer-name">Sanna Lee '20</div>
+                    <div class="profile-name">Sanna Lee '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="sanna-lee-bio">
@@ -408,13 +407,13 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#rosamund-van-wingerden-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/placeholder.png" alt="Rosamund van Wingerden">
                   <div class="description">
-                    <div class="officer-name">Rosamund van Wingerden '20</div>
+                    <div class="profile-name">Rosamund van Wingerden '20</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="rosamund-van-wingerden-bio">
@@ -425,17 +424,17 @@
           </div>
         </div>
 
-        <h2>Tech Team</h2>
-        <p>The Tech Team is responsible for creating and maintaining tools that aid the team in running the tournament.</p>
+        <h2 class="section-subtitle">Tech Team</h2>
+        <p class="section-description">The Tech Team is responsible for creating and maintaining tools that aid the team in running the tournament.</p>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <ul class="list-group">
               <li class="list-group-item" data-toggle="collapse" href="#yun-teng-bio" aria-expanded="false">
                 <div class="profile-main">
                   <img src="img/bios/placeholder.png" alt="Yun Teng">
                   <div class="description">
-                    <div class="officer-name">Yun Teng '19</div>
-                    <div class="officer-title">Webmaster</div>
+                    <div class="profile-name">Yun Teng '19</div>
+                    <div class="profile-title">Webmaster</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="yun-teng-bio">
@@ -446,8 +445,8 @@
           </div>
         </div>
 
-        <h2>Event Supervisors</h2>
-        <p>Coming soon!</p>
+        <h2 class="section-subtitle">Event Supervisors</h2>
+        <p class="section-description">Coming soon!</p>
 
       </div>
     </div>

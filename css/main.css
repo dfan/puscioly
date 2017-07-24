@@ -3,6 +3,11 @@ html, body {
   height: 100%;
 }
 
+body {
+  /* Default to system font if custom font not supported */
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .btn {
   background-image: none;
   border: none;
@@ -25,9 +30,8 @@ html, body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-body {
-  /* Default to system font if custom font not supported */
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.container-fluid {
+  padding-right: 0;
 }
 
 .dropdown-menu {
@@ -57,17 +61,18 @@ body {
 }
 
 .navbar-brand {
-  display: none;
+  background-color: transparent;
+  margin-top: 3px;
 }
 
-.navbar-collapse {
-  text-align: left;
+.navbar-brand img {
+  height: 24px;
 }
 
 .navbar .navbar-nav {
   display: inline-block;
   text-align: left;
-  float: none;
+  float: right;
   vertical-align: top;
   margin-top: 0;
   margin-bottom: 0;
@@ -100,6 +105,7 @@ body {
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
+  text-transform: uppercase;
 }
 
 /* Fixes dropdown click color issue */
@@ -119,139 +125,6 @@ body {
   margin: 0px 6px;
 }
 
-.logo {
-  min-height: 22px;
-  height: 22px;
-}
-
-@media (max-width: 767px) {
-  #navbar ul > li > a {
-    line-height: 20px;
-    height: 40px;
-    width: 767px;
-  }
-
-  .navbar-brand {
-    display: block;
-  }
-
-  .navbar-brand img {
-    height: 22px;
-  }
-
-  .navbar-brand-collapse {
-    display: none !important;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > li {
-    border: 0;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    color: white;
-    font-weight: 300;
-    padding: 10px 25px;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > li:focus {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu > li:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu .divider {
-    display: none;
-  }
-}
-
-@media (min-width: 832px) and (max-width: 992px) {
-  .navbar-nav > li > a {
-    font-size: 90%;
-  }
-
-  .home-title {
-    font-size: 44px !important;
-  }
-}
-
-@media (min-width: 782px) and (max-width: 832px) {
-  .navbar-nav > li > a {
-    font-size: 80%;
-  }
-
-  .home-title {
-    font-size: 42px !important;
-  }
-
-  .home-subtitle {
-    font-size: 24px !important;
-    font-weight: 300;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 782px) {
-  .navbar-nav > li > a {
-    font-size: 75%;
-  }
-
-  .home-title {
-    font-size: 42px !important;
-  }
-
-  .home-subtitle {
-    font-size: 24px !important;
-    font-weight: 300;
-  }
-}
-
-@media (max-width: 782px) {
-  .home-title {
-    font-size: 42px !important;
-  }
-
-  .home-subtitle {
-    font-size: 24px !important;
-    font-weight: 300;
-  }
-}
-
-@media (max-width: 620px) {
-  .home-title {
-    font-size: 34px !important;
-  }
-
-  .home-subtitle {
-    font-size: 20px !important;
-    font-weight: 300;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-title {
-    font-size: 30px !important;
-  }
-
-  .home-subtitle {
-    font-size: 16px !important;
-    font-weight: 300;
-  }
-}
-
-@media (max-width: 420px) {
-  .home-title {
-    font-size: 24px !important;
-  }
-}
-
 h1, h2, h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -260,8 +133,16 @@ h1, h2, h3 {
   padding-bottom: 75px;
 }
 
+.content {
+  font-weight: 300;
+  font-size: 16px;
+}
+
 .home-container {
   text-align: center;
+}
+
+.counter-container {
 }
 
 .text-vertical-center {
@@ -273,7 +154,13 @@ h1, h2, h3 {
 }
 
 .section-title {
-  font-size: 42px;
+  font-size: 32px;
+  padding-bottom: 12px;
+}
+
+.section-subtitle {
+  font-size: 30px;
+  padding-bottom: 12px;
 }
 
 .home-title {
@@ -327,7 +214,7 @@ h2 {
 }
 
 #profiles .list-group-item .profile-main {
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   max-width: 100%;
 }
 
@@ -340,11 +227,11 @@ h2 {
   display: inline-block;
 }
 
-#profiles .list-group-item .officer-name {
-  font-size: 28px;
+#profiles .list-group-item .profile-name {
+  font-size: 24px;
 }
 
-#profiles .list-group-item .officer-title {
+#profiles .list-group-item .profile-title {
   font-size: 20px;
   font-weight: 300;
 }
@@ -426,4 +313,185 @@ p.lead {
   -ms-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+
+@media (max-width: 767px) {
+  #navbar ul > li > a {
+    line-height: 20px;
+    height: 40px;
+    width: 767px;
+  }
+
+  .navbar .navbar-nav {
+    float: none;
+  }
+
+  .navbar-brand {
+    margin-top: 0px;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li {
+    border: 0;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: white;
+    font-weight: 300;
+    padding: 10px 25px;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li:focus {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu .divider {
+    display: none;
+  }
+}
+
+@media (min-width: 882px) and (max-width: 992px) {
+  .home-title {
+    font-size: 44px !important;
+  }
+}
+
+@media (min-width: 832px) and (max-width: 882px) {
+  .navbar-nav > li > a {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 782px) and (max-width: 832px) {
+  .navbar-nav > li > a {
+    font-size: 80%;
+  }
+
+  .home-title {
+    font-size: 42px !important;
+  }
+
+  .home-subtitle {
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 782px) {
+  .navbar-nav > li > a {
+    font-size: 75%;
+  }
+
+  .home-title {
+    font-size: 42px !important;
+  }
+
+  .home-subtitle {
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 782px) {
+  .home-title {
+    font-size: 42px !important;
+  }
+
+  .home-subtitle {
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  .home-title {
+    font-size: 34px !important;
+  }
+
+  .home-subtitle {
+    font-size: 20px !important;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 562px) {
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  #profiles .section-description {
+    text-align: justify;
+    padding: 0px 3% !important;
+  }
+
+  #profiles .profile-main {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    padding-bottom: 0 !important;
+    padding-left: calc((100% - 250px));
+    position: relative;
+  }
+
+  #profiles .description {
+    position: absolute;
+    width: 250px;
+    text-align: center;
+    bottom: 0px;
+    padding-left: 0 !important;
+  }
+
+  #profiles .profile-name, #profiles .profile-title {
+    font-size: 16px !important;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 0px;
+  }
+
+  #profiles .profile-bio {
+    margin: 3%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 30px !important;
+  }
+
+  .home-subtitle {
+    font-size: 16px !important;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-title {
+    font-size: 24px !important;
+  }
 }
