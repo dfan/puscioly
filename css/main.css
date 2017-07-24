@@ -3,6 +3,11 @@ html, body {
   height: 100%;
 }
 
+body {
+  /* Default to system font if custom font not supported */
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .btn {
   background-image: none;
   border: none;
@@ -25,9 +30,8 @@ html, body {
   background: rgba(0, 0, 0, 0.2);
 }
 
-body {
-  /* Default to system font if custom font not supported */
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.container-fluid {
+  padding-right: 0;
 }
 
 .dropdown-menu {
@@ -57,17 +61,18 @@ body {
 }
 
 .navbar-brand {
-  display: none;
+  background-color: transparent;
+  margin-top: 3px;
 }
 
-.navbar-collapse {
-  text-align: left;
+.navbar-brand img {
+  height: 24px;
 }
 
 .navbar .navbar-nav {
   display: inline-block;
   text-align: left;
-  float: none;
+  float: right;
   vertical-align: top;
   margin-top: 0;
   margin-bottom: 0;
@@ -100,6 +105,7 @@ body {
   border: 0;
   padding-left: 20px;
   padding-right: 20px;
+  text-transform: uppercase;
 }
 
 /* Fixes dropdown click color issue */
@@ -131,16 +137,12 @@ body {
     width: 767px;
   }
 
+  .navbar .navbar-nav {
+    float: none;
+  }
+
   .navbar-brand {
-    display: block;
-  }
-
-  .navbar-brand img {
-    height: 22px;
-  }
-
-  .navbar-brand-collapse {
-    display: none !important;
+    margin-top: 0px;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu {
@@ -173,13 +175,15 @@ body {
   }
 }
 
-@media (min-width: 832px) and (max-width: 992px) {
-  .navbar-nav > li > a {
-    font-size: 90%;
-  }
-
+@media (min-width: 882px) and (max-width: 992px) {
   .home-title {
     font-size: 44px !important;
+  }
+}
+
+@media (min-width: 832px) and (max-width: 882px) {
+  .navbar-nav > li > a {
+    font-size: 90%;
   }
 }
 
@@ -224,6 +228,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .container-fluid {
+    padding-right: 15px;
+  }
+}
+
 @media (max-width: 620px) {
   .home-title {
     font-size: 34px !important;
@@ -262,6 +272,9 @@ h1, h2, h3 {
 
 .home-container {
   text-align: center;
+}
+
+.counter-container {
 }
 
 .text-vertical-center {
