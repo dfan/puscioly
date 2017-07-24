@@ -353,8 +353,93 @@ p.lead {
   transition: all .3s ease-in-out;
 }
 
+@media (min-width: 882px) and (max-width: 992px) {
+  .home-title {
+    font-size: 40px !important;
+  }
+}
+
+@media (min-width: 832px) and (max-width: 882px) {
+  .home-title {
+    font-size: 40px !important;
+  }
+  .navbar-nav > li > a {
+    font-size: 90%;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 30px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 782px) and (max-width: 832px) {
+  .navbar-nav > li > a {
+    font-size: 80%;
+  }
+
+  .home-title {
+    font-size: 40px !important;
+  }
+
+  .home-subtitle {
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .section-subtitle {
+    font-size: 28px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 782px) {
+  .navbar-nav > li > a {
+    font-size: 75%;
+  }
+
+  .home-title {
+    font-size: 40px !important;
+  }
+
+  .home-subtitle {
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 26px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+}
 
 @media (max-width: 767px) {
+
+  .container-fluid {
+    padding-right: 15px;
+  }
+
   #navbar ul > li > a {
     line-height: 20px;
     height: 40px;
@@ -418,89 +503,76 @@ p.lead {
   .navbar-inverse #navbar li.divider {
     background-color: transparent;
   }
-}
 
-@media (min-width: 882px) and (max-width: 992px) {
-  .home-title {
-    font-size: 44px !important;
-  }
-}
-
-@media (min-width: 832px) and (max-width: 882px) {
-  .navbar-nav > li > a {
-    font-size: 90%;
-  }
-}
-
-@media (min-width: 782px) and (max-width: 832px) {
-  .navbar-nav > li > a {
-    font-size: 80%;
-  }
-
-  .home-title {
-    font-size: 42px !important;
-  }
-
-  .home-subtitle {
-    font-size: 24px !important;
-    font-weight: 300;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 782px) {
-  .navbar-nav > li > a {
-    font-size: 75%;
-  }
-
-  .home-title {
-    font-size: 42px !important;
-  }
-
-  .home-subtitle {
-    font-size: 24px !important;
-    font-weight: 300;
-  }
-}
-
-@media (max-width: 782px) {
-  .home-title {
-    font-size: 42px !important;
-  }
-
-  .home-subtitle {
-    font-size: 24px !important;
-    font-weight: 300;
-  }
-}
-
-@media (max-width: 767px) {
-  .container-fluid {
-    padding-right: 15px;
-  }
-}
-
-@media (max-width: 620px) {
   .home-title {
     font-size: 34px !important;
   }
 
   .home-subtitle {
-    font-size: 20px !important;
+    font-size: 24px !important;
     font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 26px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 562px) and (max-width: 620px) {
+
+  .home-title {
+    font-size: 30px !important;
+  }
+
+  .home-subtitle {
+    font-size: 20px !important;
+  }
+
+  .section-title {
+    font-size: 28px !important;
+  }
+
+  .section-subtitle {
+    font-size: 24px !important;
+  }
+
+  .content {
+    font-size: 14px;
   }
 }
 
 @media (max-width: 562px) {
-  h1 {
-    font-size: 28px !important;
-  }
-
-  h2 {
-    font-size: 22px !important;
-  }
 
   h1, h2 {
     text-align: center;
+  }
+
+  .home-title {
+    font-size: 26px !important;
+  }
+
+  .home-subtitle {
+    font-size: 20px !important;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 24px;
+  }
+
+  .content {
+    font-size: 14px;
   }
 
   #profiles .section-description {
@@ -538,19 +610,48 @@ p.lead {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 420px) and (max-width: 480px) {
+
+  h1, h2 {
+    text-align: center;
+  }
+
   .home-title {
-    font-size: 30px !important;
+    font-size: 24px !important;
   }
 
   .home-subtitle {
     font-size: 16px !important;
-    font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 22px !important;
+  }
+
+  .section-subtitle {
+    font-size: 20px !important;
   }
 }
 
 @media (max-width: 420px) {
+
+  h1, h2 {
+    text-align: center;
+  }
+
   .home-title {
-    font-size: 24px !important;
+    font-size: 20px !important;
+  }
+
+  .home-subtitle {
+    font-size: 16px !important;
+  }
+
+  .section-title {
+    font-size: 22px !important;
+  }
+
+  .section-subtitle {
+    font-size: 20px !important;
   }
 }
