@@ -161,7 +161,7 @@ textarea {
 }
 
 #clock-countdown .number {
-	font-size: 80px;
+	font-size: 78px;
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
@@ -171,11 +171,12 @@ textarea {
 
 #clock-countdown span {
 	display: block;
-	font-size: 21px;
+	font-size: 18px;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
 	padding-top: 10px;
+	text-transform: lowercase;
 	position: relative;
 }
 
