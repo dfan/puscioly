@@ -183,8 +183,13 @@ body {
   margin: 0px 6px;
 }
 
-.navbar .navbar-nav > .active {
+.navbar .navbar-nav > .active > a {
   color: #008BBC !important;
+/*  border-bottom: 2px solid #008BBC !important;*/
+}
+
+.navbar .navbar-nav > .active:hover > a{
+  color: #FFFFFF !important;
 /*  border-bottom: 2px solid #008BBC !important;*/
 }
 
