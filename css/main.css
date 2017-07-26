@@ -50,6 +50,10 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.dropdown-toggle {
+  background-color: transparent;
+}
+
 .dropdown-menu {
   background-color: transparent;
   padding: 0;
@@ -63,16 +67,21 @@ body {
   padding-bottom: 10px;
 }
 
-.dropdown-menu > li > a:hover {
+.navbar-default .dropdown-menu > li > a {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-default .dropdown-menu > li > a:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar-inverse .dropdown-menu > li > a {
   color: #555555;
 }
 
-.navbar-inverse .dropdown-menu > li > a:focus, .navbar-inverse .dropdown-menu > li > a:hover {
+.navbar-inverse .dropdown-menu > li > a:focus,
+.navbar-inverse .dropdown-menu > li > a:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -118,10 +127,6 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-default .navbar-nav .open .dropdown-menu > li:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #555555;
 }
@@ -147,7 +152,10 @@ body {
 }
 
 /* Fixes dropdown click color issue */
-.nav .open > a, .navbar-default .nav .open>a:hover, .navbar-default .nav .open > a:focus {
+.navbar-default .navbar-nav .open > a,
+.navbar-default .navbar-nav .open > a:hover,
+.navbar-default .navbar-nav .open > a:active,
+.navbar-default .navbar-nav .open > a:focus {
   background-color: transparent;
 }
 
@@ -162,6 +170,7 @@ body {
   height: 60px;
 }
 
+#navbar > ul > li > a:focus,
 #navbar > ul > li > a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -173,23 +182,11 @@ body {
 }
 
 .navbar .navbar-nav > .active > a {
-  color: #008BBC !important;
-/*  border-bottom: 2px solid #008BBC !important;*/
+  /* override later */
 }
 
 .navbar .navbar-nav > .active:hover > a{
-  color: #FFFFFF !important;
-/*  border-bottom: 2px solid #008BBC !important;*/
-}
-
-.navbar .navbar-nav > .active:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 80%;
-  top: 100%;
-  left: 10%;
-  border: 2px solid #008BBC;
+  /* override later */
 }
 
 .navbar-inverse #navbar li.divider {
@@ -383,6 +380,18 @@ p.lead {
   transition: all .3s ease-in-out;
 }
 
+@media (max-width: 1200px) {
+  #profiles .list-group-item .profile-name {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 562px) and (max-width: 992px) {
+  #profiles .list-group-item .profile-name {
+    font-size: 26px !important;
+  }
+}
+
 @media (min-width: 882px) and (max-width: 992px) {
   .home-title {
     font-size: 40px !important;
@@ -502,10 +511,7 @@ p.lead {
     padding: 10px 25px;
   }
 
-  .navbar-default .navbar-nav .open .dropdown-menu > li:focus {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
+  .navbar-default .navbar-nav .open .dropdown-menu > li:focus,
   .navbar-default .navbar-nav .open .dropdown-menu > li:hover {
     background-color: rgba(0, 0, 0, 0.4);
   }
