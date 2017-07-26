@@ -3,6 +3,11 @@ html, body {
   height: 100%;
 }
 
+.site-main {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
 body {
   /* Default to system font if custom font not supported */
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -18,6 +23,21 @@ body {
   -webkit-transition: all 0.1s ease-in-out 0s;
 }
 
+.btn-orange {
+  background-color: #FF6600;
+  color: white;
+  border-radius: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 10px 15px;
+}
+
+.btn-orange:hover {
+  background-color: #C9302C;
+  color: white;
+}
+
 .btn-glass {
   background: transparent;
   color: white;
@@ -28,10 +48,6 @@ body {
 .btn-glass:hover {
   color: white;
   background: rgba(0, 0, 0, 0.2);
-}
-
-.container-fluid {
-  padding-right: 0;
 }
 
 .dropdown-menu {
@@ -65,8 +81,9 @@ body {
   background-color: transparent;
   letter-spacing: 0.5px;
   font-weight: 300;
-  padding-top: 20px;
+  padding-top: 10px;
   border: 0;
+  /*border-color: #000000;*/
 }
 
 .navbar-brand {
@@ -75,7 +92,8 @@ body {
 }
 
 .navbar-brand img {
-  height: 24px;
+  min-height: 22px;
+  height: 22px;
 }
 
 .navbar .navbar-nav {
@@ -97,7 +115,7 @@ body {
 
 /* Collapsible three bar button */
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li:hover {
@@ -118,18 +136,6 @@ body {
   background-color: #555555;
 }
 
-#navbar > ul > li > a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-#navbar > ul > li > a {
-  color: white;
-  border: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-transform: uppercase;
-}
-
 .navbar-inverse #navbar > ul > li > a, .navbar-inverse #navbar > ul > li > a:focus {
   background-color: transparent;
   color: #555555;
@@ -147,8 +153,17 @@ body {
 
 /* Avoid propagation to dropdown */
 #navbar > ul > li > a {
+  color: white;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
   line-height: 30px;
   height: 60px;
+}
+
+#navbar > ul > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #navbar li.divider {
@@ -157,28 +172,37 @@ body {
   margin: 0px 6px;
 }
 
+.navbar .navbar-nav > .active > a {
+  color: #008BBC !important;
+/*  border-bottom: 2px solid #008BBC !important;*/
+}
+
+.navbar .navbar-nav > .active:hover > a{
+  color: #FFFFFF !important;
+/*  border-bottom: 2px solid #008BBC !important;*/
+}
+
+.navbar .navbar-nav > .active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 80%;
+  top: 100%;
+  left: 10%;
+  border: 2px solid #008BBC;
+}
+
 .navbar-inverse #navbar li.divider {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-h1, h2, h3 {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.container {
-  padding-bottom: 75px;
-}
-
 .content {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .home-container {
   text-align: center;
-}
-
-.counter-container {
 }
 
 .text-vertical-center {
@@ -190,17 +214,15 @@ h1, h2, h3 {
 }
 
 .section-title {
-  font-size: 42px;
-  padding-bottom: 12px;
+  font-size: 45px;
 }
 
 .section-subtitle {
-  font-size: 30px;
-  padding-bottom: 12px;
+  font-size: 22px;
 }
 
 .home-title {
-  font-size: 48px;
+  font-size: 54px;
   display: inline;
   color: #FFFFFF;
 }
@@ -260,7 +282,8 @@ h1, h2, h3 {
 }
 
 #profiles .list-group-item .profile-name {
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 26px;
 }
 
 #profiles .list-group-item .profile-title {
@@ -282,39 +305,46 @@ body.mobile .animated {
   visibility: visible;
 }
 
-#clock-countdown {
-  color: #fff;
-  overflow: hidden;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-bottom: 10px;
   line-height: 1.2em;
 }
 
-h1, h2 {
-  text-transform: uppercase;
-}
-
 h1 {
   font-family: 'Lato', sans-serif;
-  font-size: 42px;
+  font-size: 62px;
   position: relative;
-  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
   font-weight: 300;
+}
+
+body:not(.main) h1 {
+  text-transform: uppercase;
 }
 
 h2 {
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 32px;
   position: relative;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+body:not(.main) h2 {
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
+  font-weight: 300;
+}
+
+body:not(.main) h3 {
+  text-transform: uppercase;
 }
 
 h4 {
