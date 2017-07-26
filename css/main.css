@@ -380,6 +380,27 @@ p.lead {
   transition: all .3s ease-in-out;
 }
 
+.footer, .footer-inverse {
+  margin-top: 24px;
+  padding-top: 24px;
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-inverse {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+  color: white !important;
+}
+
+.footer-inverse p {
+  color: #555555 !important;
+}
+
 @media (max-width: 1200px) {
   #profiles .list-group-item .profile-name {
     font-size: 16px !important;
@@ -396,14 +417,18 @@ p.lead {
   .home-title {
     font-size: 40px !important;
   }
+  .navbar-nav > li > a {
+    font-size: 80%;
+  }
 }
 
 @media (min-width: 832px) and (max-width: 882px) {
   .home-title {
     font-size: 40px !important;
   }
+
   .navbar-nav > li > a {
-    font-size: 90%;
+    font-size: 80%;
   }
 
   .section-title {
