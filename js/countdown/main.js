@@ -66,7 +66,7 @@
 		======================================*/
 		
 		//Image Background 
-		$(".image-background").backstretch("img/sherrerd.jpg");
+		$(".image-background").backstretch("img/artmuseum.jpg");
 		
 		
 		/*====================================
