@@ -87,9 +87,10 @@ body {
 }
 
 .navbar {
+  font-family: 'Lato';
   background-color: transparent;
   letter-spacing: 0.5px;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 10px;
   border: 0;
   /*border-color: #000000;*/
@@ -106,6 +107,7 @@ body {
 }
 
 .navbar .navbar-nav {
+  color: #121626;
   display: inline-block;
   text-align: left;
   float: right;
@@ -141,6 +143,7 @@ body {
   background-color: #555555;
 }
 
+/* Change this to change navbar font color */
 .navbar-inverse #navbar > ul > li > a, .navbar-inverse #navbar > ul > li > a:focus {
   background-color: transparent;
   color: #555555;
@@ -194,8 +197,10 @@ body {
 }
 
 .content {
-  font-weight: 300;
-  font-size: 14px;
+  font-family:'Lato';
+  font-weight: 400;
+  font-size: 15px;
+  min-height: calc(100vh - 140px);
 }
 
 .home-container {
@@ -289,7 +294,7 @@ body {
 }
 
 #profiles .list-group-item .profile-bio {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -363,13 +368,6 @@ p {
   margin-bottom: 20px;
 }
 
-p.lead {
-  font-family: 'Lato', sans-serif;
-  font-size: 21px;
-  padding: 0;
-  font-weight: 400;
-}
-
 , a > * {
   cursor: pointer;
   text-decoration: none;
@@ -378,27 +376,6 @@ p.lead {
   -ms-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-}
-
-.footer, .footer-inverse {
-  margin-top: 24px;
-  padding-top: 24px;
-}
-
-.footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.footer-inverse {
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.footer p {
-  color: white !important;
-}
-
-.footer-inverse p {
-  color: #555555 !important;
 }
 
 @media (max-width: 1200px) {
@@ -646,7 +623,7 @@ p.lead {
     justify-content: center;
     width: 250px;
     padding-bottom: 0 !important;
-    padding-left: calc((100% - 250px));
+    padding-left: calc(100% - 250px);
     position: relative;
   }
 
@@ -715,4 +692,30 @@ p.lead {
   .section-subtitle {
     font-size: 20px !important;
   }
+}
+
+.footer, .footer-inverse {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-inverse {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+  color: white !important;
+}
+
+.footer-inverse p {
+  color: #555555 !important;
 }
