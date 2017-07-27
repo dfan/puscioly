@@ -702,6 +702,7 @@ p {
   line-height: 40px;
   text-align: center;
   background-color: #eeeeee;
+  margin-bottom: 0;
 }
 
 .footer {
