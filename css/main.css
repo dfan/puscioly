@@ -78,6 +78,7 @@ body {
 
 .navbar-inverse .dropdown-menu > li > a {
   color: #555555;
+  font-weight: 400;
 }
 
 .navbar-inverse .dropdown-menu > li > a:focus,
@@ -251,10 +252,11 @@ body {
   -webkit-filter: grayscale(0.9); /* -webkit-filter: opacity(0.75);*/
 }
 
-.sponsor-logo {
-  width:90%;
-  margin: auto;
+.partner-logo {
   display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
 }
 
 #profiles .list-group-item {
@@ -696,13 +698,17 @@ p {
 
 .footer, .footer-inverse {
   position: relative;
-  bottom: 0;
+  bottom: -11px;
   width: 100%;
   height: 40px;
   line-height: 40px;
   text-align: center;
   background-color: #eeeeee;
+}
+
+.footer-inverse p {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .footer {
