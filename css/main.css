@@ -616,7 +616,6 @@ p {
 
   #profiles .section-description {
     text-align: justify;
-    padding: 0px 3% !important;
   }
 
   #profiles .profile-main {
@@ -697,16 +696,23 @@ p {
 .footer, .footer-inverse {
   position: relative;
   bottom: -11px;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
   background-color: #eeeeee;
+  margin: 0 auto;
 }
 
-.footer-inverse p {
-  margin-bottom: 0;
-  padding-bottom: 0;
+.footer-content .social-icons {
+  position: relative;
+  height: 40px;
+}
+
+.footer-content .social-icons a {
+  position: absolute;
+  top: 5px;
+}
+
+.footer, .footer-content > .col-md-2,
+.footer, .footer-content > .col-md-8 {
+  padding: 0;
 }
 
 .footer {
@@ -715,6 +721,13 @@ p {
 
 .footer-inverse {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer-content p {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding: 10px;
 }
 
 .footer p {
