@@ -260,7 +260,6 @@ body {
 }
 
 #profiles .list-group-item {
-  position: relative;
   margin-bottom: 16px;
   padding: 0;
   padding-bottom: 12px;
@@ -623,9 +622,7 @@ p {
   #profiles .profile-main {
     display: flex;
     justify-content: center;
-    width: 250px;
     padding-bottom: 0 !important;
-    padding-left: calc(100% - 250px);
     position: relative;
   }
 
@@ -634,6 +631,7 @@ p {
     width: 250px;
     text-align: center;
     bottom: 0px;
+    left: calc(50% - 125px);
     padding-left: 0 !important;
   }
 
