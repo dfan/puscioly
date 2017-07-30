@@ -380,9 +380,15 @@ p {
   }
 }
 
-@media (min-width: 562px) and (max-width: 992px) {
+@media (min-width: 650px) and (max-width: 992px) {
   #profiles .list-group-item .profile-name {
     font-size: 26px !important;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 650px) {
+  #profiles .list-group-item .profile-name {
+    font-size: 20px !important;
   }
 }
 
@@ -580,6 +586,10 @@ p {
 
   .content {
     font-size: 14px;
+  }
+
+  #profiles .profile-name {
+    font-size: 20px !important;
   }
 }
 
