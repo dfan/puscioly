@@ -374,13 +374,14 @@ p {
   transition: all .3s ease-in-out;
 }
 
-@media (max-width: 1200px) {
-  #profiles .list-group-item .profile-name {
-    font-size: 16px !important;
+@media (min-width: 992px) and (max-width: 1200px) {
+  #profiles .profile-name,
+  #profiles .profile-title {
+    font-size: 13px !important;
   }
 }
 
-@media (min-width: 650px) and (max-width: 992px) {
+@media (min-width: 650px) and (max-width: 991px) {
   #profiles .list-group-item .profile-name {
     font-size: 26px !important;
   }
