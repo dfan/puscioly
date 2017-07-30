@@ -33,7 +33,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 input,
 select,
-textarea { 
+textarea {
 	font-size: 16px;
 	font-weight: 300;
 	font-style: normal;
@@ -123,6 +123,7 @@ textarea {
 }
 
 .content-slide {
+	margin-top: 40px;
 	color: #fff;
 }
 .item-slide {
@@ -381,7 +382,7 @@ body.mobile .animated {
 		height: auto;
 		padding: 200px 80px;
 	}
-	
+
 	h1 {
 		font-size: 50px;
 	}
@@ -425,7 +426,7 @@ body.mobile .animated {
 		vertical-align: middle;
 		overflow: hidden;
 	}
-		
+
 	.socials-icons li {
 		margin: 0;
 		display: block;
@@ -453,21 +454,21 @@ body.mobile .animated {
 }
 
 @media(max-width:768px){
-	
-	
+
+
 	.section {
 		text-align: center !important;
 	}
-	
+
 	.header-section,
 	.tour-header {
 		padding-bottom: 40px;
 	}
-	
+
 	.fullscreen .section-container {
 		display: block;
 	}
-	
+
 	.main-site .section-container {
 		display: block;
 		height: auto;
@@ -476,27 +477,27 @@ body.mobile .animated {
 	.main-site .container-table {
 		display: block;
 	}
-		
+
 	.subscription-form input,
 	.subscription-form button {
 		float: none;
 	}
-	
+
 	.subscription-form button {
 		margin-top: 20px;
 	}
-	
+
 	.line-separate,
 	.line-separate span:before,
 	.line-separate span:after {
 		margin: 0 auto;
 	}
-	
+
 	.line-separate span:before,
 	.line-separate span:after {
 		width: 90px !important;
 	}
-	
+
 	.counter-container {
 		max-width: 100%;
 		width: auto;
@@ -505,13 +506,13 @@ body.mobile .animated {
 		border-right: 0;
 		padding: 0px;
 	}
-	
+
 	#clock-countdown .counter-box {
 		width: 100%;
 		float: none;
 		border: none;
 	}
-		
+
 	.socials-icons {
 		position: relative;
 		display: block;
@@ -531,7 +532,7 @@ body.mobile .animated {
 		vertical-align: middle;
 		overflow: hidden;
 	}
-		
+
 	.socials-icons li {
 		margin: 0;
 		display: block;
@@ -552,7 +553,7 @@ body.mobile .animated {
 		line-height: 80px;
 		font-size: 21px;
 	}
-	
+
 	.textslider h1 {
 		font-size: 62px;
 	}
@@ -564,17 +565,17 @@ body.mobile .animated {
 	.textslider h3 {
 		font-size: 30px;
 	}
-	
+
 	.item-service {
 		text-align: center;
 	}
-	
+
 	.service-icon {
 		float: none;
 		width: 100%;
 		text-align: center;
 	}
-	
+
 	.service-text {
 		margin-left: 0;
 	}
@@ -602,15 +603,15 @@ body.mobile .animated {
 }
 
 @media (max-width:640px){
-	
+
 	.subscription-form input[type="email"] {
 		min-width: 200px;
 	}
-	
+
 	.subscription-form button {
 		min-width: 150px;
 	}
-	
+
 	.copyright {
 		line-height: 50px;
 	}
@@ -635,7 +636,7 @@ body.mobile .animated {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	
+
 	.socials-icons ul  {
 		margin: 0 auto;
 		text-align: center;
@@ -643,7 +644,7 @@ body.mobile .animated {
 		vertical-align: middle;
 		overflow: hidden;
 	}
-		
+
 	.socials-icons li {
 		margin: 0px 10px;
 		display: inline-block;

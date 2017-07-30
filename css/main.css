@@ -3,11 +3,6 @@ html, body {
   height: 100%;
 }
 
-.site-main {
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
 body {
   /* Default to system font if custom font not supported */
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
