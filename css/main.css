@@ -62,7 +62,7 @@ body {
 
 .dropdown-menu > li > a {
   color: white;
-  font-weight: 300;
+  font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -530,7 +530,7 @@ p {
 
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #555555;
-    font-weight: 300;
+    font-weight: 400;
     padding: 10px 25px;
   }
 
