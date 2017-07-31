@@ -469,10 +469,8 @@
       $(document).ready(function(){
         /* Hover animation for scroll-up tooltip textbox */
         $('[data-toggle="tooltip"]').tooltip({
-          if(isTouchDevice()===false) {
-            animation: true,
-            delay: {show: 25, hide: 25}
-          }
+          animation: true,
+          delay: {show: 25, hide: 25}
         });
         /* Smooth scroll for any element with id "scroll-top" */
         $("body").on("click", "#scroll-top", function(){
