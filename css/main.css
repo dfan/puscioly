@@ -24,7 +24,7 @@ body {
   border-radius: 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   padding: 10px 15px;
 }
 
@@ -281,11 +281,11 @@ body {
 
 #profiles .list-group-item .profile-name {
   font-weight: 400;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 #profiles .list-group-item .profile-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -505,6 +505,7 @@ p {
 
   .navbar-default .navbar-nav .open .dropdown-menu > li,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li {
+    padding-left: 5px;
     border: 0;
   }
 
