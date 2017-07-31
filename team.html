@@ -78,7 +78,7 @@
     <div class="container content">
       <h1 class="section-title">Leadership</h1>
       <p>Click on each profile to read the bio!</p>
-      Jump to: <a href="#directors" class="table-of-contents">Directors</a> | <a href="#emeritus" class="table-of-contents">Emeritus</a> | <a href="#content" class="table-of-contents">Content</a> | <a href="#logistics" class="table-of-contents">Logistics</a> | <a href="#finance" class="table-of-contents">Financial</a> | <a href="#communications" class="table-of-contents">Communications</a> | <a href="#tech" class="table-of-contents">Tech</a>
+      Jump to: <a href="#directors" class="table-of-contents">Directors</a> <a href="#emeritus" class="table-of-contents">Emeritus</a> <a href="#content" class="table-of-contents">Content</a> <a href="#logistics" class="table-of-contents">Logistics</a> <a href="#finance" class="table-of-contents">Financial</a> <a href="#communications" class="table-of-contents">Communications</a> <a href="#tech" class="table-of-contents">Tech</a>
       <hr>
       <div id="profiles">
         <h2 class="section-subtitle" id="directors">Tournament Directors <i class="fa fa-angle-double-up" id="scroll-top" data-toggle="tooltip" title="Scroll to top" aria-hidden="true"></i></h2>
@@ -428,8 +428,8 @@
           </div>
         </div>
 
-        <h2 class="section-subtitle" id="tech">Tech Team <i class="fa fa-angle-double-up" id="scroll-top" data-toggle="tooltip" title="Scroll to top" aria-hidden="true"></i></h2>
-        <p class="section-description">The Tech Team is responsible for creating and maintaining tools that aid the team in running the tournament.</p>
+        <h2 class="section-subtitle" id="tech">Tech Chair <i class="fa fa-angle-double-up" id="scroll-top" data-toggle="tooltip" title="Scroll to top" aria-hidden="true"></i></h2>
+        <p class="section-description">The Tech Chair is responsible for maintaining and creating new tools that aid the team in running the tournament.</p>
         <div class="row">
           <div class="col-md-6">
             <ul class="list-group">
@@ -438,7 +438,6 @@
                   <img src="img/bios/yun.jpg" alt="Yun Teng">
                   <div class="description">
                     <div class="profile-name">Yun Teng '19</div>
-                    <div class="profile-title">Webmaster</div>
                   </div>
                 </div>
                 <div class="collapse profile-bio" id="yun-teng-bio">
@@ -470,8 +469,10 @@
       $(document).ready(function(){
         /* Hover animation for scroll-up tooltip textbox */
         $('[data-toggle="tooltip"]').tooltip({
-          animation: true,
-          delay: {show: 25, hide: 25}
+          if(isTouchDevice()===false) {
+            animation: true,
+            delay: {show: 25, hide: 25}
+          }
         });
         /* Smooth scroll for any element with id "scroll-top" */
         $("body").on("click", "#scroll-top", function(){

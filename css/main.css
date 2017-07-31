@@ -17,6 +17,17 @@ body {
   color: #23527c !important;
 }
 
+.table-of-contents {
+  display: inline-block;
+  padding: 2px 5px;
+  margin-right: 5px;
+  background-color: #ff8f00;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 .btn {
   background-image: none;
   border: none;
