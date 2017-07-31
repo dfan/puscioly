@@ -8,6 +8,15 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+#scroll-top {
+  margin-left: 25px;
+  font-size: 24px;
+  color: #2D73B0;
+}
+#scroll-top:hover{
+  color: #23527c !important;
+}
+
 .btn {
   background-image: none;
   border: none;
