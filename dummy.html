@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,18 +9,23 @@
     <meta name="keywords" content="princeton, science olympiad, scioly, scio, so, invitational, tournament, university">
     <meta name="description" content="Science Olympiad invitational tournament run by Princeton University students. Coming February 3rd, 2018.">
 
+    <!-- CSS Implementing Countdown Plugin -->
+    <link rel="stylesheet" href="css/countdown/style.css" >
+    <link rel="stylesheet" href="css/countdown/animate.min.css" />
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/TimeCircles.css">
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
     <!-- Latest compiled and minified JavaScript: must load JQuery before Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="
+    sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/4d03c06201.js"></script>
 
     <link rel="canonical" href="http://princetonscioly.org/">
     <!-- Favicons for life -->
@@ -45,9 +51,14 @@
     <meta name="msapplication-square310x310logo" content="img/favicon/mstile-310x310.png" />
   </head>
 
-  <body>
+  <body class="image-background main">
+    <!-- Preloader control speed in main.js-->
+    <div id="preloader">
+    <div id="loading-animation">&nbsp;</div>
+    </div>
+    <!-- /Preloader -->
     <!-- Static navbar -->
-    <nav class="navbar navbar-inverse navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container-fluid container">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
@@ -64,7 +75,7 @@
             <li><a href="info.html">Tournament Information</a></li>
             <li><a href="updates.html">Updates</a></li>
             <li><a href="team.html">The Team</a></li>
-            <li class="active"><a href="partners.html">Partners</a></li>
+            <li><a href="partners.html">Partners</a></li>
             <li class="dropdown"><a href="past" data-toggle="dropdown" class="dropdown-toggle">Archive <b class="caret"></b></a>
               <ul class="dropdown-menu pull-right">
                 <li><a href="past-tests.html" style="margin: 0">All Tests</a></li>
@@ -76,42 +87,41 @@
         </div>
       </div>
     </nav>
-    <div class="container content">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="section-title">Partners</h1>
+    <div id="section-home" class="home-section-wrap center">
+      <div class="section-overlay"></div>
+    </div>
 
-          <p>Interested in partnering with Princeton University Science Olympiad? Send us a message at <a href="mailto:scioly@princeton.edu" target="_top">scioly@princeton.edu</a>.</p>
-
-          <hr>
-
-          <h2 style="text-align: center;">Special thanks to: </h3><br>
-
-          <div class="row">
-            <div class="col-lg-4">
-
-            </div>
-            <div class="col-lg-4">
-              <img class="partner-logo" src="img/sponsors/seas.png" alt="School of Engineering and Applied Sciences" />
-            </div>
-            <div class="col-lg-4">
-
+    <div class="home-container">
+      <section class="section fullscreen">
+        <!-- home section -->
+        <div class="item-slide show">
+          <div class="container content">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="content-slide" style="padding-bottom: 0px;">
+                  <h1 class="home-title">Princeton University</h1><br>
+                  <h1 class="home-title">Science Olympiad Invitational</h1>
+                  <h3>Coming on February 10, 2018</h3><br>
+                  <div class="clock" data-date="2018-02-10 08:00:00"></div>
+                  <a href="about.html"><button type="button" class="btn btn-orange">Learn More</button></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-    <div class="footer-inverse">
-      <div class="footer-content container">
-        <div class="col-md-2 social-icons">
-          <a href="https://www.facebook.com/princetonuniversityscioly" target="_blank" style="font-size: 20px;"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        </div>
-        <div class="col-md-8">
-          <p>Have questions? Want to sponsor? Contact us at <a href="mailto:scioly@princeton.edu">scioly@princeton.edu</a>.</p>
-        </div>
-        <div class="col-md-2">
-        </div>
-      </div>
-    </div>
+    <!-- JS for countdown plugin-->
+    <!-- Needed for weird error caused by newer jquery -->
+    <script type="text/javascript" src="js/countdown/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/countdown/main.js"></script>
+    <script type="text/javascript" src="js/TimeCircles.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".clock").TimeCircles({use_background: false, fg_width: 0.07});
+      })
+    </script>
   </body>
 </html>

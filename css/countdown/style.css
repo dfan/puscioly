@@ -162,7 +162,7 @@ textarea {
 }
 
 #clock-countdown .number {
-	font-size: 78px;
+	font-size: 64px;
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
@@ -363,295 +363,50 @@ body.mobile .animated {
 
 /* ==================== 21.0 RESPONSIVE STYLES ==================== */
 
-
-@media(min-width:1300px){
-	.main-site .container {
-		width: 1170px;
-	}
-}
-
-@media(max-width:991px){
-
-	.main-site .page-container {
-		display: block;
-		vertical-align: middle;
-	}
-
-	.main-site.fullscreen {
-		display: block;
-		height: auto;
-		padding: 200px 80px;
-	}
-
-	h1 {
-		font-size: 50px;
-	}
-
-	h2 {
-		font-size: 44px;
-	}
-
-	h3 {
-		font-size: 22px;
-	}
-	.big-video {
-		 padding:30px;
-	}
-	.big-maps {
-		 padding:100px;
-	}
-	.big-maps ul {
-		 padding-left:120px;
-	}
+@media(max-width:992px){
 	#clock-countdown .counter-box {
-		width: 170px;
-		padding: 15px 15px;
+		margin: 25px 0;
 	}
-	.socials-icons {
-		position: relative;
-		display: block;
-		margin: 0;
-		width: auto;
-		height: auto;
-		top: auto;
-		bottom: auto;
-		right: auto;
-		z-index: 10;
-	}
-
-	.socials-icons ul  {
-		margin: 0 auto;
-		text-align: center;
-		display: table;
-		vertical-align: middle;
-		overflow: hidden;
-	}
-
-	.socials-icons li {
-		margin: 0;
-		display: block;
-		float: left;
-	}
-
-	.socials-icons li a {
-		display: block;
-		width: 80px;
-		height: 80px;
-		line-height: 80px;
-		border-right: 0px solid transparent;
-		border-bottom: 1px solid transparent;
-	}
-
-	.socials-icons li a i {
-		color: #fff;
-		line-height: 80px;
-		font-size: 21px;
-	}
-	.text-primary{
-		margin-left:300px;
-	}
-
-}
-
-@media(max-width:768px){
-
-
-	.section {
-		text-align: center !important;
-	}
-
-	.header-section,
-	.tour-header {
-		padding-bottom: 40px;
-	}
-
-	.fullscreen .section-container {
-		display: block;
-	}
-
-	.main-site .section-container {
-		display: block;
-		height: auto;
-	}
-
-	.main-site .container-table {
-		display: block;
-	}
-
-	.subscription-form input,
-	.subscription-form button {
-		float: none;
-	}
-
-	.subscription-form button {
-		margin-top: 20px;
-	}
-
-	.line-separate,
-	.line-separate span:before,
-	.line-separate span:after {
-		margin: 0 auto;
-	}
-
-	.line-separate span:before,
-	.line-separate span:after {
-		width: 90px !important;
-	}
-
-	.counter-container {
-		max-width: 100%;
-		width: auto;
-		margin: 0 auto;
-		border-left: 0;
-		border-right: 0;
-		padding: 0px;
-	}
-
-	#clock-countdown .counter-box {
-		width: 100%;
-		float: none;
-		border: none;
-	}
-
-	.socials-icons {
-		position: relative;
-		display: block;
-		margin: 0;
-		width: auto;
-		height: auto;
-		top: auto;
-		bottom: auto;
-		right: auto;
-		z-index: 10;
-	}
-
-	.socials-icons ul  {
-		margin: 0 auto;
-		text-align: center;
-		display: table;
-		vertical-align: middle;
-		overflow: hidden;
-	}
-
-	.socials-icons li {
-		margin: 0;
-		display: block;
-		float: left;
-	}
-
-	.socials-icons li a {
-		display: block;
-		width: 80px;
-		height: 80px;
-		line-height: 80px;
-		border-right: 0px solid transparent;
-		border-bottom: 1px solid transparent;
-	}
-
-	.socials-icons li a i {
-		color: #fff;
-		line-height: 80px;
-		font-size: 21px;
-	}
-
-	.textslider h1 {
-		font-size: 62px;
-	}
-
-	.textslider h2 {
+	#clock-countdown .number {
 		font-size: 48px;
 	}
+}
 
-	.textslider h3 {
-		font-size: 30px;
+@media(max-width:767px){
+	#clock-countdown .counter-box {
+		width: 140px;
+		margin: 20px 0;
 	}
-
-	.item-service {
-		text-align: center;
+	#clock-countdown .number {
+		font-size: 42px;
 	}
-
-	.service-icon {
-		float: none;
-		width: 100%;
-		text-align: center;
+	#clock-countdown span {
+		font-size: 16px;
 	}
-
-	.service-text {
-		margin-left: 0;
-	}
-	.big-maps ul {
-		 padding-left:100px;
-	}
-	.big-video {
-		 padding:20px;
-	}
-	.big-maps {
-		 padding:100px;
-	}
-	iframe {
-		 width:350px;
-		 height:300px;
-	}
-	#map1 {
-		 width:350px;
-		 height:300px;
-	}
-	.text-primary{
-		margin-left:250px;
-	}
-
 }
 
 @media (max-width:640px){
+	#clock-countdown .counter-box {
+		width: 120px;
+		margin: 15px 0;
+	}
+	#clock-countdown .number {
+		font-size: 36px;
+	}
+	#clock-countdown span {
+		font-size: 14px;
+	}
+}
 
-	.subscription-form input[type="email"] {
-		min-width: 200px;
+@media(max-width:562px){
+	#clock-countdown .counter-box {
+		width: 100px;
+		margin: 5px 0;
 	}
-
-	.subscription-form button {
-		min-width: 150px;
+	#clock-countdown .number {
+		font-size: 30px;
 	}
-
-	.copyright {
-		line-height: 50px;
+	#clock-countdown span {
+		font-size: 12px;
 	}
-	.big-maps ul {
-		 padding-left:20px;
-	}
-	iframe {
-		 width:250px;
-		 height:200px;
-	}
-	#map1 {
-		 width:250px;
-		 height:200px;
-	}
-	.big-video {
-		 padding:10px;
-	}
-	.big-maps {
-		 padding:50px;
-	}
-	.main-site.fullscreen {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-	.socials-icons ul  {
-		margin: 0 auto;
-		text-align: center;
-		display: table;
-		vertical-align: middle;
-		overflow: hidden;
-	}
-
-	.socials-icons li {
-		margin: 0px 10px;
-		display: inline-block;
-		float: none;
-	}
-	.text-primary{
-		margin-left:20px;
-	}
-
 }

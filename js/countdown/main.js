@@ -78,7 +78,7 @@
 				+ '<div class="counter-container"><div class="counter-box first"><div class="number">%-D</div><span>Day%!d</span></div>'
 				+ '<div class="counter-box"><div class="number">%H</div><span>Hours</span></div>'
 				+ '<div class="counter-box"><div class="number">%M</div><span>Minutes</span></div>'
-				+ '<div class="counter-box last"><div class="number">%S</div><span>Seconds</span></div></div>'
+				// + '<div class="counter-box last"><div class="number">%S</div><span>Seconds</span></div></div>'
 			));
 		});
 
