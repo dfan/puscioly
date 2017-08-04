@@ -417,6 +417,9 @@ p {
   .home-title {
     font-size: 40px !important;
   }
+  .tournament-date {
+    font-size: 22px !important;
+  }
   .navbar-nav > li > a {
     font-size: 80%;
   }
@@ -425,6 +428,10 @@ p {
 @media (min-width: 832px) and (max-width: 882px) {
   .home-title {
     font-size: 40px !important;
+  }
+
+  .tournament-date {
+    font-size: 22px !important;
   }
 
   .navbar-nav > li > a {
@@ -453,6 +460,10 @@ p {
     font-size: 40px !important;
   }
 
+  .tournament-date {
+    font-size: 22px !important;
+  }
+
   .home-subtitle {
     font-size: 24px !important;
     font-weight: 300;
@@ -467,7 +478,7 @@ p {
   }
 
   .content {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -478,6 +489,10 @@ p {
 
   .home-title {
     font-size: 40px !important;
+  }
+
+  .tournament-date {
+    font-size: 22px !important;
   }
 
   .home-subtitle {
@@ -494,7 +509,7 @@ p {
   }
 
   .content {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -570,6 +585,10 @@ p {
     font-size: 34px !important;
   }
 
+  .tournament-date {
+    font-size: 18px !important;
+  }
+
   .home-subtitle {
     font-size: 24px !important;
     font-weight: 300;
@@ -584,7 +603,7 @@ p {
   }
 
   .content {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -592,6 +611,10 @@ p {
 
   .home-title {
     font-size: 30px !important;
+  }
+
+  .tournament-date {
+    font-size: 16px !important;
   }
 
   .home-subtitle {
@@ -607,7 +630,7 @@ p {
   }
 
   .content {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   #profiles .profile-name {
@@ -638,7 +661,7 @@ p {
   }
 
   .content {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   #profiles .section-description {
@@ -705,6 +728,10 @@ p {
 
   .home-title {
     font-size: 20px !important;
+  }
+
+  .tournament-date {
+    font-size: 14px !important;
   }
 
   .home-subtitle {

@@ -372,6 +372,7 @@ body.mobile .animated {
 	}
 }
 
+
 @media(max-width:767px){
 	#clock-countdown .counter-box {
 		width: 140px;
@@ -387,7 +388,7 @@ body.mobile .animated {
 
 @media (max-width:640px){
 	#clock-countdown .counter-box {
-		width: 120px;
+		width: 110px;
 		margin: 15px 0;
 	}
 	#clock-countdown .number {
@@ -400,7 +401,7 @@ body.mobile .animated {
 
 @media(max-width:562px){
 	#clock-countdown .counter-box {
-		width: 100px;
+		width: 80px;
 		margin: 5px 0;
 	}
 	#clock-countdown .number {
@@ -408,5 +409,11 @@ body.mobile .animated {
 	}
 	#clock-countdown span {
 		font-size: 12px;
+	}
+}
+
+@media (max-width: 420px) {
+	#clock-countdown .number {
+		font-size: 24px;
 	}
 }
