@@ -8,24 +8,23 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+ul {
+  list-style-type: square;
+}
+
+ul.sub-bullet {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
 #scroll-top {
   margin-left: 25px;
   font-size: 24px;
   color: #2D73B0;
 }
+
 #scroll-top:hover{
   color: #23527c !important;
-}
-
-.table-of-contents {
-  display: inline-block;
-  padding: 2px 5px;
-  margin-right: 5px;
-  background-color: #ff8f00;
-  color: white;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 300;
 }
 
 .btn {
@@ -65,6 +64,39 @@ body {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.btn-link {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FF8F00;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+  color: white;
+  border-radius: 0;
+  padding: 5px 5px;
+  margin-right: 5px;
+}
+
+.btn-link:hover {
+  background-color: #EEEEEE;
+  color: #000000;
+}
+
+/*.table-of-contents {
+  display: inline-block;
+  padding: 2px 5px;
+  margin-right: 5px;
+  background-color: #ff8f00;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.table-of-contents:hover {
+  color: #000000;
+  text-decoration: none;
+}*/
+
 .dropdown-toggle {
   background-color: transparent;
 }
@@ -96,10 +128,20 @@ body {
   font-weight: 400;
 }
 
+/* Dropdown background color */
+.navbar-inverse .dropdown-menu {
+  background-color: #EEEEEE;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none; /* remove rounded border */
+  -webkit-border-radius: 0px; /* remove rounded border */
+}
+
 .navbar-inverse .dropdown-menu > li > a:focus,
 .navbar-inverse .dropdown-menu > li > a:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #555555;
 }
 
 .navbar {
@@ -107,7 +149,7 @@ body {
   background-color: transparent;
   letter-spacing: 0.5px;
   font-weight: 400;
-  padding-top: 10px;
+  /*padding-top: 10px; adds a blank space above the navbar -- subjective preference */
   border: 0;
   /*border-color: #000000;*/
 }
@@ -208,6 +250,7 @@ body {
   /* override later */
 }
 
+/* Divider color */
 .navbar-inverse #navbar li.divider {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -727,11 +770,11 @@ p {
   }
 
   .home-title {
-    font-size: 20px !important;
+    font-size: 24px !important;
   }
 
   .tournament-date {
-    font-size: 14px !important;
+    font-size: 18px !important;
   }
 
   .home-subtitle {
@@ -747,9 +790,13 @@ p {
   }
 }
 
+.footer-inverse {
+  border-top: none !important;
+}
+
 .footer, .footer-inverse {
   position: relative;
-  bottom: -11px;
+  bottom: -20px;
   background-color: #eeeeee;
   margin: 0 auto;
 }
@@ -762,6 +809,7 @@ p {
 .footer-content .social-icons a {
   position: absolute;
   top: 5px;
+  color: #3b5998;
 }
 
 .footer, .footer-content > .col-md-2,
