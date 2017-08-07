@@ -12,15 +12,25 @@ body {
   margin-left: 25px;
   font-size: 24px;
   color: #2D73B0;
+  cursor: pointer;
 }
 #scroll-top:hover{
   color: #23527c !important;
 }
 
 .table-of-contents {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.table-label {
+  margin-right: 5px;
+}
+
+.table-link {
   display: inline-block;
   padding: 2px 5px;
   margin-right: 5px;
+  margin-bottom: 20px;
   background-color: #ff8f00;
   color: white;
   text-transform: uppercase;
@@ -271,7 +281,16 @@ body {
   display: block;
   margin: 0 auto;
   text-align: center;
-  width: 75%;
+  width: 80%;
+  padding: 24px 0px;
+}
+
+.partner-logo-container {
+  /*max-width: 100%;*/
+}
+
+.partner-logo-col {
+  padding: 24px 0px;
 }
 
 #profiles .list-group-item {
@@ -442,10 +461,6 @@ p {
     font-size: 36px;
   }
 
-  .section-subtitle {
-    font-size: 30px;
-  }
-
   .content {
     font-size: 15px;
   }
@@ -473,10 +488,6 @@ p {
     font-size: 34px;
   }
 
-  .section-subtitle {
-    font-size: 28px;
-  }
-
   .content {
     font-size: 15px;
   }
@@ -502,10 +513,6 @@ p {
 
   .section-title {
     font-size: 32px;
-  }
-
-  .section-subtitle {
-    font-size: 26px;
   }
 
   .content {
@@ -598,12 +605,12 @@ p {
     font-size: 32px;
   }
 
-  .section-subtitle {
-    font-size: 26px;
-  }
-
   .content {
     font-size: 15px;
+  }
+
+  .partner-logo-col {
+    padding: 12px 36px;
   }
 }
 
@@ -623,10 +630,6 @@ p {
 
   .section-title {
     font-size: 28px !important;
-  }
-
-  .section-subtitle {
-    font-size: 24px !important;
   }
 
   .content {
@@ -654,10 +657,6 @@ p {
 
   .section-title {
     font-size: 28px;
-  }
-
-  .section-subtitle {
-    font-size: 24px;
   }
 
   .content {
@@ -712,7 +711,7 @@ p {
   }
 
   .section-title {
-    font-size: 22px !important;
+    font-size: 24px !important;
   }
 
   .section-subtitle {
@@ -739,7 +738,7 @@ p {
   }
 
   .section-title {
-    font-size: 22px !important;
+    font-size: 24px !important;
   }
 
   .section-subtitle {
