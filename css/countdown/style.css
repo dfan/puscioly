@@ -414,6 +414,6 @@ body.mobile .animated {
 
 @media (max-width: 420px) {
 	#clock-countdown .number {
-		font-size: 24px;
+		font-size: 26px;
 	}
 }
