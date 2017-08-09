@@ -123,10 +123,16 @@ ul.sub-bullet {
   background-color: transparent;
 }
 
+.dropdown {
+  position: relative;
+}
+
 .dropdown-menu {
   background-color: transparent;
   padding: 0;
   border: 0;
+  min-width: 0;
+  width: 101%;
 }
 
 .dropdown-menu > li > a {
@@ -347,7 +353,6 @@ p.address {
 .partner-logo {
   display: block;
   margin: 0 auto;
-  text-align: center;
   width: 80%;
   padding: 24px 0px;
 }
@@ -358,6 +363,10 @@ p.address {
 
 .partner-logo-col {
   padding: 24px 0px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #profiles .list-group-item {
@@ -678,6 +687,10 @@ p {
 
   .partner-logo-col {
     padding: 12px 36px;
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
