@@ -15,7 +15,11 @@ RewriteRule ^(.*)$ $1.html
 RewriteCond %{THE_REQUEST} \.html
 RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
+# force https
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://scioly.princeton.edu/$1 [R,L]
+
 # for archive page (no .html for index b/c of above rule)
-Redirect 301 /past/2017/index https://scioly.mycpanel2.princeton.edu/past/2017
+Redirect 301 /past/2017/index https://scioly.princeton.edu/past/2017
 # for root page
-Redirect 301 /index https://scioly.mycpanel2.princeton.edu
+Redirect 301 /index https://scioly.princeton.edu
