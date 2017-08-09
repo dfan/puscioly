@@ -368,7 +368,7 @@ p.address {
   width: 100%;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: none; /*1px solid rgba(0, 0, 0, 0.125) */
 }
 
 #profiles .list-group-item .profile-main {
