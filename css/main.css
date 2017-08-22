@@ -185,12 +185,14 @@ ul.sub-bullet {
 
 .navbar-brand {
   background-color: transparent;
-  margin-top: 3px;
+  padding-top: 12px;
+  /*margin-top: 3px;*/
 }
 
+/* Navbar is 50 px high */
 .navbar-brand img {
-  min-height: 22px;
-  height: 22px;
+  min-height: 26px;
+  height: 26px;
 }
 
 .navbar .navbar-nav {
