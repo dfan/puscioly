@@ -518,7 +518,7 @@ p {
     font-size: 22px !important;
   }
   .navbar-nav > li > a {
-    font-size: 80%;
+    font-size: 75%;
   }
 }
 
@@ -532,7 +532,7 @@ p {
   }
 
   .navbar-nav > li > a {
-    font-size: 80%;
+    font-size: 75%;
   }
 
   .section-title {
@@ -546,7 +546,7 @@ p {
 
 @media (min-width: 782px) and (max-width: 832px) {
   .navbar-nav > li > a {
-    font-size: 80%;
+    font-size: 75%;
   }
 
   .home-title {
