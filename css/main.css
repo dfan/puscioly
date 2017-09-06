@@ -59,9 +59,7 @@ ul.sub-bullet {
   -webkit-transition: all 0.1s ease-in-out 0s;
 }
 
-.btn-orange {
-  background-color: #FF6600;
-  color: white;
+.btn-main {
   border-radius: 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -74,7 +72,22 @@ ul.sub-bullet {
   width: 150px;
 }
 
+.btn-orange {
+  background-color: #FF6600;
+  color: white;
+}
+
 .btn-orange:focus, .btn-orange:hover {
+  background-color: #C9302C;
+  color: white;
+}
+
+.btn-red {
+  background-color: #C9302C;
+  color: white;
+}
+
+.btn-red:focus, .btn-red:hover {
   background-color: #C9302C;
   color: white;
 }
@@ -739,7 +752,7 @@ p {
     text-align: center;
   }
 
-  .btn-orange {
+  .btn-main {
     font-size: 12px;
     width: 130px;
   }
