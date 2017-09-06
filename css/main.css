@@ -78,17 +78,17 @@ ul.sub-bullet {
 }
 
 .btn-orange:focus, .btn-orange:hover {
-  background-color: #C9302C;
+  background-color: #FF5200;
   color: white;
 }
 
 .btn-red {
-  background-color: #C9302C;
+  background-color: #C8202C;
   color: white;
 }
 
 .btn-red:focus, .btn-red:hover {
-  background-color: #C9302C;
+  background-color: #C3002C;
   color: white;
 }
 
