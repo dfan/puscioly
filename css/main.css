@@ -872,11 +872,29 @@ p {
   height: 40px;
 }
 
+/* To keep icons aligned left */
+.footer-content .social-icons ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+.footer-content .social-icons ul li {
+  top: 5px;
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+  float: left;
+}
+
+/*
 .footer-content .social-icons a {
   position: absolute;
   top: 5px;
   color: #3b5998;
 }
+*/
 
 .footer, .footer-content > .col-md-2,
 .footer, .footer-content > .col-md-8 {
