@@ -352,10 +352,6 @@ p.address {
   padding: 24px 0px;
 }
 
-.partner-logo-container {
-  /*max-width: 100%;*/
-}
-
 .partner-logo-col {
   padding: 24px 0px;
   height: 250px;
@@ -373,6 +369,10 @@ p.address {
   border: none;
   border-radius: 0;
   border-bottom: none; /*1px solid rgba(0, 0, 0, 0.125) */
+}
+
+#profiles .auto-cursor {
+  cursor: auto;
 }
 
 #profiles .list-group-item .profile-main {
@@ -777,6 +777,14 @@ p {
     text-align: center;
     bottom: 0px;
     left: calc(50% - 125px);
+    padding-left: 0 !important;
+  }
+
+  #profiles .description-bottom {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
     padding-left: 0 !important;
   }
 
