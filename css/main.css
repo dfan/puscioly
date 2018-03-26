@@ -394,7 +394,7 @@ p.address {
   font-size: 20px;
 }
 
-#profiles .list-group-item .profile-title {
+#profiles .list-group-item .profile-title, #profiles .list-group-item .profile-school {
   font-size: 16px;
   font-weight: 300;
 }
@@ -486,7 +486,7 @@ p {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   #profiles .profile-name,
-  #profiles .profile-title {
+  #profiles .profile-title, #profiles .profile-school {
     font-size: 13px !important;
   }
 }
@@ -782,17 +782,28 @@ p {
 
   #profiles .description-bottom {
     position: absolute;
-    width: 100%;
+    width: 250px;
     text-align: center;
     bottom: 0px;
     padding-left: 0 !important;
   }
 
-  #profiles .profile-name, #profiles .profile-title {
+  #profiles .profile-name {
     font-size: 16px !important;
     color: white;
     background: rgba(0, 0, 0, 0.3);
-    padding: 5px 0px;
+    padding: 0px;
+  }
+
+  #profiles .profile-title {
+    font-size: 12px !important;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0px;
+  }
+
+  #profiles .profile-school {
+    display: none;
   }
 
   #profiles .profile-bio {
