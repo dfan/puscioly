@@ -284,6 +284,7 @@ ul.sub-bullet {
 .content-slide {
   margin-top: 0px;
   padding-bottom: 0px;
+  /* background-color: rgba(255, 255, 255, 0.3) */
 }
 
 .home-container {
