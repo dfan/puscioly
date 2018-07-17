@@ -245,6 +245,7 @@ ul.sub-bullet {
 .navbar-default .navbar-nav .open > a:active,
 .navbar-default .navbar-nav .open > a:focus {
   background-color: transparent;
+  min-width: 125px;
 }
 
 /* Avoid propagation to dropdown */

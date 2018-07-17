@@ -13,7 +13,11 @@
       });
       // wrapped in function so executes after the page is loaded
       $(function(){
-        $("#navbar").load("navbar.html"); 
+        $("#navbar").load("navbar.html", function() {
+          let navbar = document.querySelector(".navbar");
+          navbar.classList.remove("navbar-inverse")
+          navbar.classList.add("navbar-default")
+        }); 
       });
     </script> 
   </head>
