@@ -1,3 +1,6 @@
+import os
+os.system("curl \"https://docs.google.com/spreadsheets/d/1tS_AHvttsNA7WVVQjaR8Wv1kEpn-DmuzI5Ld2A0XPQc/export?gid=0&format=tsv\" > team.tsv")
+
 readFile = open("team.tsv")
 writeFile = open("team-container-content.html", 'w')
 
@@ -7,8 +10,8 @@ print >> writeFile, "<div class=\"container content\"> \n\
   <div class=\"table-of-contents\"> \n\
     <a href=\"#directors\" class=\"table-link\">Directors</a> \n\
     <a href=\"#content\" class=\"table-link\">Content</a> \n\
-    <a href=\"#logistics\" class=\"table-link\">Logistics</a> \n\
     <a href=\"#finance\" class=\"table-link\">Financial</a> \n\
+    <a href=\"#logistics\" class=\"table-link\">Logistics</a> \n\
     <a href=\"#communications\" class=\"table-link\">Communications</a> \n\
     <a href=\"#graphics\" class=\"table-link\">Graphic Design</a> \n\
     <a href=\"#webmaster\" class=\"table-link\">Webmaster</a> \n\
@@ -45,44 +48,41 @@ for x in lines:
     </div>".format(x[0])
 
     elif printPerson:
-		hasTitle = False
-		title = ""
-		name = "-".join([temp.strip().lower() for temp in x[0].split(" ")])
-		if x[2] != "":
-			hasTitle = True
-			title = x[2].split(",")
-			x[2] = x[3]
-		if printRow:
-			print >> writeFile, "\t\t<div class=\"row\">"
-		print >> writeFile, "\t\t\t<div class=\"col-md-6\"> \n\
-        <ul class=\"list-group\"> \n\
-          <li class=\"list-group-item\" data-toggle=\"collapse\" href=\"#{}-bio\" aria-expanded=\"false\"> \n\
-            <div class=\"profile-main\"> \n\
-              <img src=\"img/bios2019/{}.jpg\" alt=\"{}\"> \n\
-              <div class=\"description\"> \n\
-                <div class=\"profile-name\">{} '{}</div>".format(name.strip(), name.strip(), x[0].strip(), x[0].strip(), x[1].strip())
+      hasTitle = False
+      title = ""
+      name = "-".join([temp.strip().lower() for temp in x[0].split(" ")])
+      if x[2] != "":
+        hasTitle = True
+        title = x[2].split(",")
+      if printRow:
+        print >> writeFile, "\t\t<div class=\"row\">"
+      print >> writeFile, "\t\t\t<div class=\"col-md-6\"> \n\
+          <ul class=\"list-group\"> \n\
+            <li class=\"list-group-item\" data-toggle=\"collapse\" href=\"#{}-bio\" aria-expanded=\"false\"> \n\
+              <div class=\"profile-main\"> \n\
+                <img src=\"img/bios2019/{}.jpg\" alt=\"{}\"> \n\
+                <div class=\"description\"> \n\
+                  <div class=\"profile-name\">{} '{}</div>".format(name.strip(), name.strip(), x[0].strip(), x[0].strip(), x[1].strip())
 
-		if title != "":
-			for tit in title:
-				print >> writeFile, "\t\t\t\t\t\t\t\t<div class=\"profile-title\">{}</div>".format(tit.strip())
-              
+      if title != "":
+        for tit in title:
+          print >> writeFile, "\t\t\t\t\t\t\t\t<div class=\"profile-title\">{}</div>".format(tit.strip())
+                
+      print >> writeFile, "\t\t\t\t\t\t\t</div> \n\
+              </div> \n\
+              <div class=\"collapse profile-bio\" id=\"{}-bio\"> \n\
+                {} \n\
+              </div> \n\
+            </li> \n\
+          </ul> \n\
+        </div>".format(name.strip(), x[3].strip())
 
-		print >> writeFile, "\t\t\t\t\t\t\t</div> \n\
-            </div> \n\
-            <div class=\"collapse profile-bio\" id=\"{}-bio\"> \n\
-              {} \n\
-            </div> \n\
-          </li> \n\
-        </ul> \n\
-      </div>".format(name.strip(), x[2].strip())
-
-
-		if printRow:
-			printRow = False
-			continue
-		if not printRow:
-			print >> writeFile,"\t\t</div>"
-			printRow = True
+      if printRow:
+        printRow = False
+        continue
+      if not printRow:
+        print >> writeFile,"\t\t</div>"
+        printRow = True
 
 print >> writeFile, "\t</div>"
 print >> writeFile, "</div>"

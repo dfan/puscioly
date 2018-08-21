@@ -8,19 +8,20 @@
       $('head').load('header.html', function() {
         // Page-specific information
         document.title = "About - Princeton University Science Olympiad Invitational"
-        document.querySelector("#canonical_link").setAttribute("href", "/about")
+        document.querySelector("#canonicalLink").setAttribute("href", "/about")
         document.querySelector("#title_meta").setAttribute("content", "About")
       });
       // wrapped in function so executes after the page is loaded
       $(function(){
-        $("#navbar").load("navbar.html"); 
+        $("nav").load("navbar.html");
+        $(".footer-inverse").load("footer.html");
       });
     </script> 
   </head>
 
   <body>
     <!-- Imported navbar -->
-    <nav id="navbar"></nav>
+    <nav class="navbar navbar-inverse navbar-static-top"></nav>
     
     <div class="container content">
       <div class="row">
@@ -59,22 +60,9 @@
         </div>
       </div>
     </div>
-    <div class="footer-inverse">
-      <div class="footer-content container">
-        <div class="col-md-2 social-icons">
-          <ul>
-            <li><a href="https://www.facebook.com/princetonscioly" target="_blank" style="font-size: 20px;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com/princetonscioly" target="_blank" style="font-size: 20px;"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.twitter.com/princetonscioly" target="_blank" style="font-size: 20px;"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-md-8">
-          <p>Have questions? Want to sponsor? Contact us at <a href="mailto:scioly@princeton.edu">scioly@princeton.edu</a>.</p>
-        </div>
-        <div class="col-md-2">
-        </div>
-      </div>
-    </div>
+
+    <!-- Imported Footer -->
+    <div class="footer-inverse"></div>
 
     <!-- Latest compiled and minified JavaScript: must load JQuery before Bootstrap -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->

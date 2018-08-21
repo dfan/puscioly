@@ -8,16 +8,12 @@
       $('head').load('header.html', function() {
         // Page-specific information
         document.title = "Princeton University Science Olympiad Invitational"
-        document.querySelector("#canonical_link").setAttribute("href", "http://princetonscioly.org/")
+        document.querySelector("#canonicalLink").setAttribute("href", "http://princetonscioly.org/")
         document.querySelector("#title_meta").setAttribute("content", "Home")
       });
       // wrapped in function so executes after the page is loaded
       $(function(){
-        $("#navbar").load("navbar.html", function() {
-          let navbar = document.querySelector(".navbar");
-          navbar.classList.remove("navbar-inverse")
-          navbar.classList.add("navbar-default")
-        }); 
+        $("nav").load("navbar.html");
       });
     </script> 
   </head>
@@ -29,7 +25,7 @@
     </div>
 
     <!-- Imported navbar -->
-    <nav id="navbar"></nav>
+    <nav class="navbar navbar-default navbar-static-top"></nav>
 
     <div id="section-home" class="home-section-wrap center">
       <div class="section-overlay"></div>

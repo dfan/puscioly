@@ -8,12 +8,12 @@
       $('head').load('header.html', function() {
         // Page-specific information
         document.title = "Hotels - Princeton University Science Olympiad Invitational"
-        document.querySelector("#canonical_link").setAttribute("href", "/info")
+        document.querySelector("#canonicalLink").setAttribute("href", "/info")
         document.querySelector("#title_meta").setAttribute("content", "Tournament Information | Hotels")
       });
       // wrapped in function so executes after the page is loaded
       $(function(){
-        $("#navbar").load("navbar.html"); 
+        $("nav").load("navbar.html"); 
       });
     </script>
 
@@ -23,7 +23,7 @@
 
   <body>
     <!-- Imported navbar -->
-    <nav id="navbar"></nav>
+    <nav class="navbar navbar-inverse navbar-static-top"></nav>
     
     <div class="container content">
       <div class="row">
