@@ -4,8 +4,7 @@ os.system("curl \"https://docs.google.com/spreadsheets/d/1tS_AHvttsNA7WVVQjaR8Wv
 readFile = open("team.tsv")
 writeFile = open("team-container-content.html", 'w')
 
-print >> writeFile, "<div class=\"container content\"> \n\
-  <h1 class=\"section-title\">Leadership</h1> \n\
+print >> writeFile, "<h1 class=\"section-title\">Leadership</h1> \n\
   <p>Click on each profile to read the bio!</p> \n\
   <div class=\"table-of-contents\"> \n\
     <a href=\"#directors\" class=\"table-link\">Directors</a> \n\
@@ -60,7 +59,7 @@ for x in lines:
           <ul class=\"list-group\"> \n\
             <li class=\"list-group-item\" data-toggle=\"collapse\" href=\"#{}-bio\" aria-expanded=\"false\"> \n\
               <div class=\"profile-main\"> \n\
-                <img src=\"img/bios2019/{}.jpg\" alt=\"{}\"> \n\
+                <img src=\"img/bios/{}.jpg\" alt=\"{}\"> \n\
                 <div class=\"description\"> \n\
                   <div class=\"profile-name\">{} '{}</div>".format(name.strip(), name.strip(), x[0].strip(), x[0].strip(), x[1].strip())
 
@@ -85,7 +84,6 @@ for x in lines:
         printRow = True
 
 print >> writeFile, "\t</div>"
-print >> writeFile, "</div>"
 
 readFile.close()
 writeFile.close()
