@@ -7,9 +7,9 @@
     <script> 
       $('head').load('header.html', function() {
         // Page-specific information
-        document.title = "Partners - Princeton University Science Olympiad Invitational"
-        document.querySelector("#canonicalLink").setAttribute("href", "/partners")
-        document.querySelector("#title_meta").setAttribute("content", "Partners")
+        document.title = "Hotels - Princeton University Science Olympiad Invitational"
+        document.querySelector("#canonicalLink").setAttribute("href", "/hotels")
+        document.querySelector("#title_meta").setAttribute("content", "Tournament Information | Hotels")
       });
       // wrapped in function so executes after the page is loaded
       $(function(){
@@ -17,23 +17,23 @@
         $("footer").load("footer.html");
       });
     </script>
+
+    <!-- Data table -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/jq-2.2.4/dt-1.10.15/fh-3.1.2/r-2.1.1/datatables.min.css"/>
   </head>
 
   <body>
     <!-- Imported navbar -->
     <nav class="navbar navbar-inverse navbar-static-top"></nav>
-
+    
     <div class="container content">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="section-title">Sponsors</h1>
-
-          <p>Interested in partnering with Princeton University Science Olympiad? Send us a message at <a href="mailto:scioly@princeton.edu" target="_top">scioly@princeton.edu</a> and we'd love to chat.</p>
-
+          <h1 class="section-title">Tournament Information</h1>
           <hr>
 
-          <p>To see last year's sponsors, check the archives or visit <a href="/past/2018/partners.html">here</a>.</p>
-
+          <h2 class="section-subtitle">Hotels</h2>
+          <p>We partner with several local hotels to provide competing teams with a comfortable stay at the lowest possible prices. More information coming soon!</p>
         </div>
       </div>
     </div>
@@ -44,6 +44,23 @@
     <!-- Latest compiled and minified JavaScript: must load JQuery before Bootstrap -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jq-2.2.4/dt-1.10.15/fh-3.1.2/r-2.1.1/datatables.min.js"></script>
     <script src="https://use.fontawesome.com/4d03c06201.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('#hotels-table').DataTable(
+            {
+              "bInfo" : false,
+              "bPaginate": false,
+              "bFilter": false,
+              "aaSorting": [],
+              "columnDefs": [
+                { "orderable": false, "targets": 3 }
+              ]
+            }
+          );
+      } );
+    </script>
   </body>
+
 </html>
