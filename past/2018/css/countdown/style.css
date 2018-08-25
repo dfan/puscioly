@@ -1,0 +1,419 @@
+/*
+	Metronic by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+
+/* ==================== 1.0 RESET STYLES ==================== */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* ==================== 2.0 BOOTSTRAP FIX FOR WINPHONR 8 AND IE10  ==================== */
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/* ==================== 3.0 BASIC STYLES ==================== */
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+input,
+select,
+textarea {
+	font-size: 16px;
+	font-weight: 300;
+	font-style: normal;
+	font-family: 'Lato', sans-serif;
+}
+
+
+/* ==================== 5.0 PRELOADER ==================== */
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 10001;
+}
+
+#loading-animation {
+    width: 120px;
+    height: 128px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image:url(../../img/loading-animation.GIF);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -60px 0 0 -64px;
+}
+
+/* ==================== 9.0 HOME SECTION - SLIDER ==================== */
+.main-site {
+	position: relative;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+	display: block;
+	padding: 150px 80px;
+	margin: 0;
+	z-index: 10;
+}
+
+.main-site .container-section {
+	z-index: 10;
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100%;
+	height: 100px;
+}
+
+.main-site .container-table {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.main-site .container {
+	width: auto;
+}
+
+.main-site h1 {
+	margin-top: 30px;
+}
+
+.main-site h1,
+.main-site h2,
+.main-site h3,
+.main-site h4,
+.main-site h5,
+.main-site h6 {
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.main-site h1 {
+	font-size: 52px;
+}
+
+.main-site h2 {
+	font-size: 42px;
+}
+
+.main-site h3 {
+	font-size: 30px;
+}
+
+.content-slide {
+	margin-top: 40px;
+	color: #fff;
+}
+.item-slide {
+	margin-top:20px;
+	margin-bottom:50px;
+	display: none;
+}
+
+.item-slide.active {
+	display: block;
+}
+
+
+/* ==================== 10.0 CLOCK COUNTDOWN ==================== */
+
+
+#clock-countdown {
+	color: #fff;
+	overflow: hidden;
+}
+
+.counter-container {
+	display: table;
+	margin: 0 auto;
+}
+
+#clock-countdown .counter-box {
+	display: block;
+	width: 160px;
+	text-align: center;
+	overflow: hidden;
+	padding: 10px 25px;
+	float: left;
+	margin: 25px 0;
+	position: relative;
+}
+
+#clock-countdown .number {
+	font-size: 64px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+#clock-countdown span {
+	display: block;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	padding-top: 10px;
+	text-transform: lowercase;
+	position: relative;
+}
+
+#clock-countdown span:before {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 30px;
+	height: 1px;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 0px;
+}
+
+
+/* ==================== 16.0 OVERLAY STYLES ==================== */
+
+
+
+.section-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+
+.section-overlay {
+	background: rgba(0, 0, 0, .4) !important;
+}
+
+
+/* ==================== 17.0 BACKGROUND COLOR STYLES ==================== */
+
+.white-background {
+	background: #fff;
+}
+.dark-background {
+	background: #333;
+}
+.grey-background {
+	background: #666;
+}
+.blue-background {
+	background: #0b4ac8;
+}
+.blue-dark-background {
+	background: #052a75;
+}
+.brown-background {
+	background: #9C8061;
+}
+.red-background {
+	background: #FC331C;
+}
+.orange-background {
+	background: #EA8825;
+}
+.green-background {
+	background: #00AB66;
+}
+.violet-background {
+	background: #8C489F;
+}
+.yellow-background {
+	background: #E5C41A;
+}
+
+/* ==================== 18.0 SHORTCODES STYLES ==================== */
+
+
+.line-separate {
+	display: block;
+	margin-bottom: 30px;
+	width: 120px;
+	height: 18px;
+	position: relative;
+}
+
+.line-separate span {
+	display: block;
+	position: relative;
+	width: 18px;
+	height: 18px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.line-separate:before {
+	content: '';
+	display: block;
+	position: relative;
+	top: 8px;
+	width: 50px;
+	height: 2px;
+	margin: 0 !important;
+	float: left;
+}
+
+.line-separate:after {
+	content: '';
+	display: block;
+	position: relative;
+	top: -10px;
+	width: 50px;
+	height: 2px;
+	margin: 0 !important;
+	float: right;
+}
+
+.line-white:before,
+.line-white:after {
+	background: #fff;
+}
+
+.line-white span {
+	box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.line-center,
+.line-center:before,
+.line-center:after {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.line-center span:before,
+.line-center span:after {
+	width: 90px;
+}
+
+/* ==================== 19.0 MS IE STYLES ==================== */
+
+.ie-10 .logo-site,
+.ie-11 .logo-site {
+	padding-top: 10px;
+	display: block;
+}
+
+@media(min-width:769px){
+	.ie-10 .header-site,
+	.ie-11 .header-site {
+		display: block !important;
+	}
+
+	.ie-10 .default-button,
+	.ie-11 .default-button,
+	.ie-10 .border-button,
+	.ie-11 .border-button, {
+		display: inline-block !important;
+	}
+}
+
+/* ==================== 20.0 MOBILE STYLES ==================== */
+
+
+body.mobile {
+	-webkit-text-size-adjust:none;
+}
+
+body.mobile .animated {
+	display: block;
+	visibility: visible;
+}
+
+.windowsphone .logo-site,
+.windowsphone .logo-site img {
+	display: block !important;
+	visibility: visible !important;
+	margin: 0 auto !important;
+}
+
+/* ==================== 21.0 RESPONSIVE STYLES ==================== */
+
+@media(max-width:992px){
+	#clock-countdown .counter-box {
+		margin: 25px 0;
+	}
+	#clock-countdown .number {
+		font-size: 48px;
+	}
+}
+
+
+@media(max-width:767px){
+	#clock-countdown .counter-box {
+		width: 140px;
+		margin: 20px 0;
+	}
+	#clock-countdown .number {
+		font-size: 42px;
+	}
+	#clock-countdown span {
+		font-size: 16px;
+	}
+}
+
+@media (max-width:640px){
+	#clock-countdown .counter-box {
+		width: 110px;
+		margin: 15px 0;
+	}
+	#clock-countdown .number {
+		font-size: 36px;
+	}
+	#clock-countdown span {
+		font-size: 14px;
+	}
+}
+
+@media(max-width:562px){
+	#clock-countdown .counter-box {
+		width: 80px;
+		margin: 5px 0;
+	}
+	#clock-countdown .number {
+		font-size: 30px;
+	}
+	#clock-countdown span {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 420px) {
+	#clock-countdown .number {
+		font-size: 26px;
+	}
+}

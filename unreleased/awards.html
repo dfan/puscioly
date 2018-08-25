@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Needs to be run on a server: python -m SimpleHTTPServer (#### > 1024, default 8000) -->
+    <!-- To kill existing process on port ####: sudo lsof -t -i tcp:#### | xargs kill -9 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script> 
+      $('head').load('header.html', function() {
+        // Page-specific information
+        document.title = "Awards - Princeton University Science Olympiad Invitational"
+        document.querySelector("#canonicalLink").setAttribute("href", "/awards")
+        document.querySelector("#title_meta").setAttribute("content", "Tournament Information | Awards")
+      });
+      // wrapped in function so executes after the page is loaded
+      $(function(){
+        $("nav").load("navbar.html"); 
+        $("footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Imported navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top"></nav>
+    
+    <div class="container content">
+      <h1 class="section-title">Awards Ceremony</h1>
+      <hr>
+
+      <div id="profiles">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="section-subtitle">Keynote Speaker</h2>
+            <ul class="list-group">
+              <li class="list-group-item auto-cursor">
+                <div class="profile-main">
+                  <img src="img/awards/lyman_page.jpg" alt="Lyman A. Page">
+                  <div class="description">
+                    <div class="profile-name">Professor Lyman Page</div>
+                  </div>
+                </div>
+                <div class="profile-bio" id="lyman-page-bio">
+                  Lyman Page is the James S. McDonnell Distinguished University Professor of Physics at Princeton University.<br>
+                  He received his BA from Bowdoin College in 1978 and, following a five-year break, his PhD from MIT in 1989. In the years between college and graduate school, he was a research technician in Antarctica. Upon returning, he rebuilt and sailed a 37’ wooden ketch on the Eastern seaboard and the Caribbean. He was a founding member of the WMAP satellite project and the founding Director of the Atacama Cosmology Telescope (ACT) project. He currently works on the Simons Observatory as well as ACT. He has received a number of awards for his research and is a member of the National Academy of Sciences.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h2 class="section-subtitle">Guest Performance</h2>
+            <ul class="list-group">
+              <li class="list-group-item auto-cursor">
+                <div class="profile-main">
+                  <img src="img/awards/opus_21.jpg" alt="Opus 21">
+                  <div class="description">
+                    <div class="profile-name">Opus 21</div>
+                  </div>
+                </div>
+                <div class="profile-bio" id="opus-21-bio">
+                  Founded in 2014, Opus 21 is dedicated to bringing an eclectic repertory of chamber music to Princeton University and beyond.<br>
+                  Consisting of a select roster of undergraduate pianists and string players, Opus 21 presents innovative programming, embracing both traditional and contemporary repertoire. Members have performed as soloists with the top symphony orchestras in the United States, including the New York Philharmonic and the Philadelphia Orchestra, and have played chamber and orchestral music in the world’s leading summer festivals and concert halls including Carnegie Hall, David Geffen Hall, and Alice Tully Hall.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h3 class="section-subtitle">Awards Program</h3>
+      <ul>
+        <li>The awards ceremony program/booklet can be found <a href="docs/PUSO2018_AwardsProgram.pdf" target="_blank">here</a>.</li>
+      </ul>
+
+      <h3 class="section-subtitle">Raffle and Special Prizes</h3>
+      <ul>
+        <li>Up to seven students will win some special prizes: see <a href="img/PUSO2018_Raffle.png">here</a> for instructions on how to enter the raffle.</li>
+        <li>Winners of all events will receive a free .TECH domain courtesy of @dotTECH Domains.</li>
+      </ul>
+    </div>
+
+    <!-- Imported Footer -->
+    <footer class="footer-inverse"></footer>
+
+    <!-- Latest compiled and minified JavaScript: must load JQuery before Bootstrap -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/4d03c06201.js"></script>
+  </body>
+
+</html>

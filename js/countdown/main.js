@@ -66,7 +66,7 @@
 		======================================*/
 		
 		//Image Background 
-		$(".image-background").backstretch("img/artmuseum.jpg");
+		$(".image-background").backstretch("img/icahn-shorter.jpg");
 		
 		
 		/*====================================

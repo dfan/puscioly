@@ -1,0 +1,923 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* Default to system font if custom font not supported */
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul.sub-bullet {
+  padding-left: 20px;
+  list-style-type: circle;
+}
+
+#scroll-top {
+  margin-left: 25px;
+  font-size: 24px;
+  color: #2D73B0;
+  cursor: pointer;
+}
+
+#scroll-top:hover{
+  color: #23527c !important;
+}
+
+.table-of-contents {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.table-label {
+  margin-right: 5px;
+}
+
+.table-link {
+  display: inline-block;
+  padding: 2px 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  background-color: #FF6600;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 0;
+}
+
+.btn {
+  background-image: none;
+  border: none;
+  letter-spacing: 1px;
+  text-decoration: none ! important;
+  text-shadow: none;
+  transition: all 0.1s ease-in-out 0s;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+}
+
+.btn-main {
+  border-radius: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.btn-orange {
+  background-color: #FF6600;
+  color: white;
+}
+
+.btn-orange:focus, .btn-orange:hover {
+  background-color: #FF5200;
+  color: white;
+}
+
+.btn-red {
+  background-color: #C8202C;
+  color: white;
+}
+
+.btn-red:focus, .btn-red:hover {
+  background-color: #C3002C;
+  color: white;
+}
+
+.btn-glass {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+}
+
+.btn-glass:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.btn-link {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FF6600;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 300;
+  color: white;
+  border-radius: 0;
+  padding: 5px 5px;
+  margin-right: 5px;
+}
+
+.btn-link:hover {
+  background-color: #C9302C;
+  color: #000000;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.dropdown-menu > li > a {
+  color: white;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar {
+  font-family: 'Lato';
+  background-color: transparent;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  border: 0;
+  margin-bottom: 0;
+}
+
+.navbar .navbar-nav {
+  color: #121626;
+  display: inline-block;
+  text-align: left;
+  float: right;
+  vertical-align: top;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  background-color: transparent;
+  padding-top: 12px;
+}
+
+/* Navbar is 50 px high */
+.navbar-brand img {
+  min-height: 26px;
+  height: 26px;
+}
+
+.navbar-default .dropdown-menu > li > a {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-default .dropdown-menu > li > a:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Dropdown background color */
+.navbar-inverse .dropdown-menu {
+  background-color: #EEEEEE;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-appearance: none; /* remove rounded border */
+  -webkit-border-radius: 0px; /* remove rounded border */
+}
+
+.navbar-inverse .dropdown-menu > li > a {
+  color: #555555;
+  font-weight: 400;
+}
+
+.navbar-inverse .dropdown-menu > li > a:focus,
+.navbar-inverse .dropdown-menu > li > a:hover {
+  color: white;
+  background-color: #555555;
+}
+
+.navbar-inverse .navbar-collapse {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Collapsible three bar button */
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFFFFF;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #555555;
+}
+
+.navbar-inverse .navbar-toggle:focus .icon-bar,
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li:hover {
+  color: white;
+  background-color: #555555;
+}
+
+/* Change this to change navbar font color */
+.navbar-inverse #navbar > ul > li > a, .navbar-inverse #navbar > ul > li > a:focus {
+  background-color: transparent;
+  color: #555555;
+}
+
+.navbar-inverse #navbar > ul > li > a:hover {
+  background-color: #555555 !important;
+  color: white;
+}
+
+/* Fixes dropdown click color issue */
+.navbar-default .navbar-nav .open > a,
+.navbar-default .navbar-nav .open > a:hover,
+.navbar-default .navbar-nav .open > a:active,
+.navbar-default .navbar-nav .open > a:focus {
+  background-color: transparent;
+}
+
+/* Avoid propagation to dropdown */
+#navbar > ul > li > a {
+  color: white;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  line-height: 30px;
+  height: 60px;
+}
+
+#navbar > ul > li > a:focus,
+#navbar > ul > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#navbar li.divider {
+  margin: 1px;
+  background-color: white;
+  margin: 0px 6px;
+}
+
+/* Divider color */
+.navbar-inverse #navbar li.divider {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  font-family:'Lato';
+  font-weight: 400;
+  font-size: 15px;
+  min-height: calc(100vh - 140px);
+}
+
+.content-slide {
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+.home-container {
+  text-align: center;
+  margin: 0;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.section-title {
+  font-size: 45px;
+}
+
+.section-subtitle {
+  font-size: 22px;
+}
+
+.home-title {
+  font-size: 54px;
+  display: inline;
+  color: #FFFFFF;
+}
+
+.home-subtitle {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.lead > p {
+  padding: 12px 12px;
+}
+
+.splash {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/image-bg.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  -webkit-filter: grayscale(0.9); /* -webkit-filter: opacity(0.75);*/
+}
+
+.address {
+  margin-left: 60px;
+}
+
+p.address {
+  margin: 0;
+  position: relative;
+  padding-left: 20;
+}
+
+.partner-logo {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 24px 0px;
+}
+
+.partner-logo-col {
+  padding: 24px 0px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profiles .list-group-item {
+  margin-bottom: 16px;
+  padding: 0;
+  padding-bottom: 12px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: none; /*1px solid rgba(0, 0, 0, 0.125) */
+}
+
+#profiles .auto-cursor {
+  cursor: auto;
+}
+
+#profiles .list-group-item .profile-main {
+  margin-bottom: 12px;
+  max-width: 100%;
+}
+
+#profiles .list-group-item img {
+  max-height: 250px;
+}
+
+#profiles .list-group-item .description {
+  padding-left: 24px;
+  display: inline-block;
+}
+
+#profiles .list-group-item .profile-name {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#profiles .list-group-item .profile-title, #profiles .list-group-item .profile-school {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#profiles .list-group-item .profile-bio {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+body.mobile {
+  -webkit-text-size-adjust:none;
+}
+
+body.mobile .animated {
+  display: block;
+  visibility: visible;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 62px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+body:not(.main) h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  position: relative;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+body:not(.main) h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+body:not(.main) h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+, a > * {
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #profiles .profile-name,
+  #profiles .profile-title, #profiles .profile-school {
+    font-size: 13px !important;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 991px) {
+  #profiles .list-group-item .profile-name {
+    font-size: 26px !important;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 650px) {
+  #profiles .list-group-item .profile-name {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 882px) and (max-width: 992px) {
+  .home-title {
+    font-size: 40px !important;
+  }
+  .tournament-date {
+    font-size: 22px !important;
+  }
+  .navbar-nav > li > a {
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 832px) and (max-width: 882px) {
+  .home-title {
+    font-size: 40px !important;
+  }
+
+  .tournament-date {
+    font-size: 22px !important;
+  }
+
+  .navbar-nav > li > a {
+    font-size: 75%;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 782px) and (max-width: 832px) {
+  .navbar-nav > li > a {
+    font-size: 75%;
+  }
+
+  .home-title {
+    font-size: 40px !important;
+  }
+
+  .tournament-date {
+    font-size: 22px !important;
+  }
+
+  .home-subtitle {
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 782px) {
+  .navbar-nav > li > a {
+    font-size: 75%;
+  }
+
+  .home-title {
+    font-size: 40px !important;
+  }
+
+  .tournament-date {
+    font-size: 22px !important;
+  }
+
+  .home-subtitle {
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .container-fluid {
+    padding-right: 15px;
+  }
+
+  #navbar ul > li > a {
+    line-height: 20px;
+    height: 40px;
+    width: 767px;
+  }
+
+  .navbar .navbar-nav {
+    float: none;
+  }
+
+  .navbar-brand {
+    margin-top: 0px;
+  }
+
+  .navbar-default .dropdown-menu > li > a {
+    background-color: transparent;
+  }
+
+  .navbar-default .dropdown-menu > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li {
+    padding-left: 5px;
+    border: 0;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: white;
+    font-weight: 300;
+    padding: 10px 25px;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu .divider {
+    display: none;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #555555;
+    font-weight: 400;
+    padding: 10px 25px;
+  }
+
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: white;
+  }
+
+  .navbar-default #navbar > ul > li > a,
+  .navbar-default #navbar > ul > li > a:focus {
+    background-color: transparent;
+  }
+
+  .navbar-default #navbar > ul > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .navbar-inverse #navbar li.divider {
+    background-color: transparent;
+  }
+
+  .home-title {
+    font-size: 34px !important;
+  }
+
+  .tournament-date {
+    font-size: 18px !important;
+  }
+
+  .home-subtitle {
+    font-size: 24px !important;
+    font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .partner-logo-col {
+    padding: 12px 36px;
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 562px) and (max-width: 620px) {
+
+  .home-title {
+    font-size: 30px !important;
+  }
+
+  .tournament-date {
+    font-size: 16px !important;
+  }
+
+  .home-subtitle {
+    font-size: 20px !important;
+  }
+
+  .section-title {
+    font-size: 28px !important;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  #profiles .profile-name {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 562px) {
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  .btn-main {
+    font-size: 12px;
+    width: 130px;
+  }
+
+  .home-title {
+    font-size: 26px !important;
+  }
+
+  .home-subtitle {
+    font-size: 20px !important;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  #profiles .section-description {
+    text-align: justify;
+  }
+
+  #profiles .profile-main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0 !important;
+    position: relative;
+  }
+
+  #profiles .description {
+    position: absolute;
+    width: 250px;
+    text-align: center;
+    bottom: 0px;
+    left: calc(50% - 125px);
+    padding-left: 0 !important;
+  }
+
+  #profiles .description-bottom {
+    position: absolute;
+    width: 250px;
+    text-align: center;
+    bottom: 0px;
+    padding-left: 0 !important;
+  }
+
+  #profiles .profile-name {
+    font-size: 16px !important;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0px;
+  }
+
+  #profiles .profile-title {
+    font-size: 12px !important;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0px;
+  }
+
+  #profiles .profile-school {
+    display: none;
+  }
+
+  #profiles .profile-bio {
+    margin: 3%;
+    text-align: justify;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 480px) {
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 24px !important;
+  }
+
+  .home-subtitle {
+    font-size: 16px !important;
+  }
+
+  .section-title {
+    font-size: 24px !important;
+  }
+
+  .section-subtitle {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 420px) {
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 24px !important;
+  }
+
+  .tournament-date {
+    font-size: 18px !important;
+  }
+
+  .home-subtitle {
+    font-size: 16px !important;
+  }
+
+  .section-title {
+    font-size: 24px !important;
+  }
+
+  .section-subtitle {
+    font-size: 20px !important;
+  }
+}
+
+.footer-inverse {
+  border-top: none !important;
+}
+
+.footer, .footer-inverse {
+  position: relative;
+  bottom: -40px;
+  background-color: #eeeeee;
+  margin: 0 auto;
+}
+
+.footer-content .social-icons {
+  position: relative;
+  height: 40px;
+}
+
+/* To keep icons aligned left */
+.footer-content .social-icons ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+.footer-content .social-icons ul li {
+  top: 5px;
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+  float: left;
+}
+
+.footer, .footer-content > .col-md-2,
+.footer, .footer-content > .col-md-8 {
+  padding: 0;
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-inverse {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.footer-content p {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding: 10px;
+}
+
+.footer p {
+  color: white !important;
+}
+
+.footer-inverse p {
+  color: #555555 !important;
+}

@@ -1,0 +1,38 @@
+School,Teams,Zip,State,StateFull,Distance,PrevAttendee
+Abington Heights High School,1,18411,PA,pennsylvania,152,TRUE
+Atholton High School,1,21044,MD,maryland,165,FALSE
+Bayard Rustin High School,2,19382,PA,pennsylvania,71,FALSE
+Boca Raton Community High School,1,33486,FL,florida,1193,FALSE
+Camas High School,1,98607,WA,washington,2883,FALSE
+Centennial High School,2,21042,MD,maryland,164,FALSE
+Charter School of Wilmington,2,19807,DE,delaware,75,FALSE
+Cherry Hill High School,1,08003,NJ,new jersey,42,FALSE
+Conestoga High School,2,19312,PA,pennsylvania,56,FALSE
+East Brunswick High School,1,08816,NJ,new jersey,18,TRUE
+Garnet Valley High School,1,19342,PA,pennsylvania,69,FALSE
+Great Neck South High School,1,11021,NY,new york,75,FALSE
+Haverford High School,1,19063,PA,pennsylvania,57,FALSE
+Islip High School,1,11751,NY,new york,97,TRUE
+John P. Stevens High School,2,08820,NJ,new jersey,26,TRUE
+Lawrence High School,1,08648,NJ,new jersey,8,FALSE
+Lewis S. Mills High School,1,06013,CT,connecticut,165,FALSE
+Livingston High School,1,07039,NJ,new jersey,47,FALSE
+Lower Merion High School,2,19003,PA,pennsylvania,53,FALSE
+Marriotts Ridge High School,2,21104,MD,maryland,168,FALSE
+Montgomery High School,1,08558,NJ,new jersey,7,TRUE
+North Penn High School,1,19446,PA,pennsylvania,47,FALSE
+Penncrest High School,1,19063,PA,pennsylvania,63,FALSE
+Princeton International School of Mathematics and Science,1,08540,NJ,new jersey,2,FALSE
+Randolph High School,1,07869,NJ,new jersey,50,TRUE
+Reservoir High School,1,20759,MD,maryland,166,TRUE
+South Brunswick High School,2,08852,NJ,new jersey,6,TRUE
+Staples High School,2,06880,CT,connecticut,105,FALSE
+Stuyvesant High School,1,10282,NY,new york,50,FALSE
+Sun Valley High School,1,19014,PA,pennsylvania,65,FALSE
+Upper Dublin High School,1,19034,PA,pennsylvania,39,FALSE
+Princeton High School,1,08540,NJ,new jersey,1,TRUE
+Walter Johnson High School,1,20814,MD,maryland,184,TRUE
+West Windsor-Plainsboro High School North,2,08536,NJ,new jersey,4,TRUE
+West Windsor-Plainsboro High School South,2,08550,NJ,new jersey,3,TRUE
+WT Woodson High School,2,22031,VA,virginia,201,FALSE
+

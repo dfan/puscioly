@@ -245,6 +245,16 @@ ul.sub-bullet {
 .navbar-default .navbar-nav .open > a:active,
 .navbar-default .navbar-nav .open > a:focus {
   background-color: transparent;
+  min-width: 125px;
+}
+
+/* Fixes dropdown click color issue */
+.navbar-inverse .navbar-nav .open > a,
+.navbar-inverse .navbar-nav .open > a:hover,
+.navbar-inverse .navbar-nav .open > a:active,
+.navbar-inverse .navbar-nav .open > a:focus {
+  background-color: transparent;
+  min-width: 125px;
 }
 
 /* Avoid propagation to dropdown */
@@ -284,6 +294,7 @@ ul.sub-bullet {
 .content-slide {
   margin-top: 0px;
   padding-bottom: 0px;
+  /* background-color: rgba(255, 255, 255, 0.3) */
 }
 
 .home-container {
@@ -308,7 +319,7 @@ ul.sub-bullet {
 }
 
 .home-title {
-  font-size: 54px;
+  font-size: 70px;
   display: inline;
   color: #FFFFFF;
 }
