@@ -890,12 +890,7 @@ p {
 }
 
 /* To keep icons aligned left */
-.footer-content .social-icons ul {
-  padding: 0;
-  margin-top: 0;
-}
-
-.footer-content .social-icons ul li {
+.footer-content .social-icons a {
   top: 5px;
   list-style: none;
   text-decoration: none;
