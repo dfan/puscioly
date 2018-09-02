@@ -3,8 +3,34 @@
         <a href="https://www.facebook.com/princetonscioly" target="_blank" style="font-size: 20px;"><i class="fa fa-facebook-square" aria-hidden="true"></i> </a>
         <a href="https://www.instagram.com/princetonscioly" target="_blank" style="font-size: 20px;"><i class="fa fa-instagram" aria-hidden="true"></i> </a>
         <a href="https://www.twitter.com/princetonscioly" target="_blank" style="font-size: 20px;"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a id="hidden-icon" href="mailto:scioly@princeton.edu" style="font-size: 20px; display:none"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
     </div>
-    <div style="margin:0 auto; width: 700px">
+    <div id="hidden-text" style="margin:0 auto; width: 450px; display: none">
     <p>Have questions? Want to sponsor? Contact us at <a href="mailto:scioly@princeton.edu">scioly@princeton.edu</a>.</p>
     </div>
 </div>
+
+<script>
+    checkSize = function(){
+        if (window.innerWidth < 624) {
+            document.querySelector("#hidden-text").style.display = "none";
+            document.querySelector("#hidden-icon").style.display = "inline-block";
+        }
+        else {
+            document.querySelector("#hidden-text").style.display = "block";
+            document.querySelector("#hidden-icon").style.display = "none";
+        }
+        
+        if (window.innerWidth < 768) {
+            document.querySelector(".footer, .footer-inverse").style.bottom = "-50px";
+        }
+        else {
+            document.querySelector(".footer, .footer-inverse").style.bottom = "-40px";
+        }
+        
+
+    }
+
+    window.addEventListener('load', checkSize);
+    window.addEventListener('resize', checkSize);
+</script>

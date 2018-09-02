@@ -202,6 +202,7 @@ ul.sub-bullet {
 
 .navbar-inverse .navbar-collapse {
   border-color: rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
 }
 
 /* Collapsible three bar button */
