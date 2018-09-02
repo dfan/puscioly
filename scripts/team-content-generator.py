@@ -2,7 +2,7 @@ import os
 os.system("curl \"https://docs.google.com/spreadsheets/d/1tS_AHvttsNA7WVVQjaR8Wv1kEpn-DmuzI5Ld2A0XPQc/export?gid=0&format=tsv\" > team.tsv")
 
 readFile = open("team.tsv")
-writeFile = open("team-container-content.html", 'w')
+writeFile = open("../team-container-content.html", 'w')
 
 print >> writeFile, "<h1 class=\"section-title\">Leadership</h1> \n\
   <p>Click on each profile to read the bio!</p> \n\
