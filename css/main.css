@@ -205,6 +205,10 @@ ul.sub-bullet {
   overflow-x: hidden;
 }
 
+.navbar-default .navbar-collapse {
+  overflow-x: hidden;
+}
+
 /* Collapsible three bar button */
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -240,13 +244,20 @@ ul.sub-bullet {
   color: white;
 }
 
+.navbar-inverse .navbar-nav .dropdown {
+  min-width: 125px;
+}
+
+.navbar-default .navbar-nav .dropdown {
+  min-width: 125px;
+}
+
 /* Fixes dropdown click color issue */
 .navbar-default .navbar-nav .open > a,
 .navbar-default .navbar-nav .open > a:hover,
 .navbar-default .navbar-nav .open > a:active,
 .navbar-default .navbar-nav .open > a:focus {
   background-color: transparent;
-  min-width: 125px;
 }
 
 /* Fixes dropdown click color issue */
@@ -255,7 +266,6 @@ ul.sub-bullet {
 .navbar-inverse .navbar-nav .open > a:active,
 .navbar-inverse .navbar-nav .open > a:focus {
   background-color: transparent;
-  min-width: 125px;
 }
 
 /* Avoid propagation to dropdown */
