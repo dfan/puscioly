@@ -52,9 +52,10 @@ function sendConfirmationEmail(e, all, one) {
   var coachFirstName = itemResponses[0].getResponse();
   var coachLastName = itemResponses[1].getResponse();
   var coachEmail = itemResponses[2].getResponse();
+  var teamEmail = itemResponses[4].getResponse();
   var schoolName = itemResponses[!isNaN(Number(itemResponses[11].getResponse())) ? 4 : 5].getResponse()
   var teamsRegistered = Number(itemResponses[!isNaN(Number(itemResponses[11].getResponse())) ? 11 : 12].getResponse())
-  var pusoEmail = "puscioly@princeton.edu"
+  var pusoEmail = "scioly@princeton.edu"
   
   Logger.log(coachFirstName + "\n" + coachLastName + "\n" + coachEmail + "\n" + schoolName + "\n" + teamsRegistered)
   
@@ -83,6 +84,11 @@ function sendConfirmationEmail(e, all, one) {
         "to": [
           {
             "email": coachEmail
+          }
+        ],
+        "cc" : [
+          {
+            "email": teamEmail
           }
         ],
         "bcc" : [
