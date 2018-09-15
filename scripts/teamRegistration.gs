@@ -1,11 +1,9 @@
-formID = '1k0MDPtj8-U1-Us06Xd4sUEuZ1XcgPHyNcbLDuLVJezM'
+formID = // Put formID here
 
 totalTeamCountLimit = 48
 secondTeamCountLimit = 8
 
-// Resets team counts to 0
 function initializeProperties(){
-  // To see the values of totalTeamCount and secondTeamCount, check File -> Project Properties -> Script Properties
   PropertiesService.getScriptProperties().setProperty('totalTeamCount', 0);
   PropertiesService.getScriptProperties().setProperty('secondTeamCount', 0);
 }
@@ -18,7 +16,6 @@ function closeForm(){
   var form = FormApp.openById(formID);
   form.setAcceptingResponses(false);
 }
-
 function onSubmit(e){
   acceptedAll = false;
   acceptedOne = false;
@@ -57,6 +54,7 @@ function sendConfirmationEmail(e, all, one) {
   var coachEmail = itemResponses[2].getResponse();
   var schoolName = itemResponses[!isNaN(Number(itemResponses[11].getResponse())) ? 4 : 5].getResponse()
   var teamsRegistered = Number(itemResponses[!isNaN(Number(itemResponses[11].getResponse())) ? 11 : 12].getResponse())
+  var pusoEmail = "puscioly@princeton.edu"
   
   Logger.log(coachFirstName + "\n" + coachLastName + "\n" + coachEmail + "\n" + schoolName + "\n" + teamsRegistered)
   
@@ -72,7 +70,7 @@ function sendConfirmationEmail(e, all, one) {
   var signature = "Sincerely, \n\nJune Ho Park and Linus Wang \nCo-Directors"
   var bodyContent = bodyGreeting + bodyPar1 + bodyPar2 + bodyPar3 + signature
   
-  var SENDGRID_KEY = ""; // INSERT SENDGRID API KEY HERE
+  var SENDGRID_KEY = // Put SendGrid API key here
 
   var headers = {
     "Authorization" : "Bearer " + SENDGRID_KEY, 
@@ -85,6 +83,11 @@ function sendConfirmationEmail(e, all, one) {
         "to": [
           {
             "email": coachEmail
+          }
+        ],
+        "bcc" : [
+          {
+            "email": pusoEmail
           }
         ],
         "subject": "Thank You for Registering for the 2019 Princeton University Science Olympiad Invitational!"
