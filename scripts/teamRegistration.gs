@@ -86,11 +86,6 @@ function sendConfirmationEmail(e, all, one) {
             "email": coachEmail
           }
         ],
-        "cc" : [
-          {
-            "email": teamEmail
-          }
-        ],
         "bcc" : [
           {
             "email": pusoEmail
@@ -111,6 +106,10 @@ function sendConfirmationEmail(e, all, one) {
         "value": bodyContent
       }
     ]
+  }
+
+  if (teamEmail.length == 0) {
+    body["personalizations"]["cc"] = teamEmail
   }
 
   var options = {
