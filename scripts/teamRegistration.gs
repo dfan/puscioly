@@ -1,11 +1,9 @@
-formID = '1k0MDPtj8-U1-Us06Xd4sUEuZ1XcgPHyNcbLDuLVJezM'
+formID = // Put formID here
 
 totalTeamCountLimit = 48
 secondTeamCountLimit = 8
 
-// Resets team counts to 0
 function initializeProperties(){
-  // To see the values of totalTeamCount and secondTeamCount, check File -> Project Properties -> Script Properties
   PropertiesService.getScriptProperties().setProperty('totalTeamCount', 0);
   PropertiesService.getScriptProperties().setProperty('secondTeamCount', 0);
 }
@@ -18,7 +16,6 @@ function closeForm(){
   var form = FormApp.openById(formID);
   form.setAcceptingResponses(false);
 }
-
 function onSubmit(e){
   acceptedAll = false;
   acceptedOne = false;
@@ -55,24 +52,26 @@ function sendConfirmationEmail(e, all, one) {
   var coachFirstName = itemResponses[0].getResponse();
   var coachLastName = itemResponses[1].getResponse();
   var coachEmail = itemResponses[2].getResponse();
+  var teamEmail = itemResponses[4].getResponse();
   var schoolName = itemResponses[!isNaN(Number(itemResponses[11].getResponse())) ? 4 : 5].getResponse()
   var teamsRegistered = Number(itemResponses[!isNaN(Number(itemResponses[11].getResponse())) ? 11 : 12].getResponse())
+  var pusoEmail = "scioly@princeton.edu"
   
   Logger.log(coachFirstName + "\n" + coachLastName + "\n" + coachEmail + "\n" + schoolName + "\n" + teamsRegistered)
   
   var bodyGreeting = "Hi " +  coachFirstName + " " + coachLastName + ", \n\n"
-  var bodyPar1 = (all ? schoolName + " has successfully registered " + teamsRegistered + " team" + (teamsRegistered == 1 ? "" : "s") + " for the Princeton University Science Olympiad Invitational on February 10th, 2018!" : 
+  var bodyPar1 = (all ? schoolName + " has successfully registered " + teamsRegistered + " team" + (teamsRegistered == 1 ? "" : "s") + " for the Princeton University Science Olympiad Invitational on February 9th, 2019!" : 
                 (one ? schoolName + " has successfully registered 1 team for the Princeton University Science Olympiad Invitational on February 9th, 2019! Due to the quick closing of registration and our 8 school cap on schools with two teams, we are unfortunately unable to register your second team at this time. If spots open in the future, we will contact you regarding whether you would like to register your other team as well." :
                 "Due to the quick closing of registration, " + schoolName + " has been placed on the waitlist for the Princeton University Science Olympiad Invitational on February 9th, 2019. If space opens up, we will email you to confirm that 1 team will attend the tournament. Please keep this e-mail as your waitlist confirmation, and reply to this email to acknowledge that you would like to keep your position on the waitlist."
                 )) + "\n\n"
-  var bodyPar2 = all || one ? "Please keep this e-mail as your registration confirmation. Should you choose to withdraw your team from our tournament after 11:59 PM EST, November 23, 2018, your school will incur a $100 fee per team withdrawn. Please reply to this email to acknowledge that you have received this email, understand the terms of your registration, and intend to participate in the tournament. Your response will confirm your school’s allotted slot in the 2018 Princeton University Science Olympiad Invitational.\n\n":
+  var bodyPar2 = all || one ? "Please keep this e-mail as your registration confirmation. Should you choose to withdraw your team from our tournament after 11:59 PM EST, November 23, 2018, your school will incur a $100 fee per team withdrawn. Please reply to this email to acknowledge that you have received this email, understand the terms of your registration, and intend to participate in the tournament. Your response will confirm your school’s allotted slot in the 2019 Princeton University Science Olympiad Invitational.\n\n":
                  ""
   var bodyPar3 = all || one ? "We are excited to welcome you to Princeton and look forward to seeing you at our tournament! If you have any questions, please contact us at scioly@princeton.edu. Required waiver forms and team rosters will be sent out in a few months. \n\n" :
                  "We hope to welcome you to Princeton! If you have any questions, please contact us at scioly@princeton.edu."
   var signature = "Sincerely, \n\nJune Ho Park and Linus Wang \nCo-Directors"
   var bodyContent = bodyGreeting + bodyPar1 + bodyPar2 + bodyPar3 + signature
   
-  var SENDGRID_KEY = ""; // INSERT SENDGRID API KEY HERE
+  var SENDGRID_KEY = // Put SendGrid API key here
 
   var headers = {
     "Authorization" : "Bearer " + SENDGRID_KEY, 
@@ -85,6 +84,11 @@ function sendConfirmationEmail(e, all, one) {
         "to": [
           {
             "email": coachEmail
+          }
+        ],
+        "bcc" : [
+          {
+            "email": pusoEmail
           }
         ],
         "subject": "Thank You for Registering for the 2019 Princeton University Science Olympiad Invitational!"
@@ -102,6 +106,10 @@ function sendConfirmationEmail(e, all, one) {
         "value": bodyContent
       }
     ]
+  }
+
+  if (teamEmail.length != 0) {
+    body["personalizations"]["cc"] = teamEmail
   }
 
   var options = {
