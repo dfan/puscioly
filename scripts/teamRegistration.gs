@@ -108,7 +108,7 @@ function sendConfirmationEmail(e, all, one) {
     ]
   }
 
-  if (teamEmail.length == 0) {
+  if (teamEmail.length != 0) {
     body["personalizations"]["cc"] = teamEmail
   }
 
