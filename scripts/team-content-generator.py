@@ -11,6 +11,7 @@ print >> writeFile, "<h1 class=\"section-title\">Leadership</h1> \n\
     <a href=\"#content\" class=\"table-link\">Content</a> \n\
     <a href=\"#finance\" class=\"table-link\">Financial</a> \n\
     <a href=\"#logistics\" class=\"table-link\">Logistics</a> \n\
+    <a href=\"#outreach\" class=\"table-link\">Outreach</a> \n\
     <a href=\"#communications\" class=\"table-link\">Communications</a> \n\
     <a href=\"#graphics\" class=\"table-link\">Graphic Design</a> \n\
     <a href=\"#webmaster\" class=\"table-link\">Webmaster</a> \n\
