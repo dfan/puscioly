@@ -76,39 +76,42 @@ async function run() {
   }, SUBMIT_BUTTON_SELECTOR);
   await page.waitFor(1500);
 
-  let numPages = 25;
+  let numPages = 35;
+  let toSkip = 5;
 
-  for (let i = 0; i < numPages; i++) {
-    for (let index = 9; index <= 28; index++) {
-      // First name on page is nth-child(9), last is 28
-      let currSelector = VIEW_DETAILS_SELECTOR.replace("%s", index.toString());
+  for (let i = 1; i <= numPages; i++) {
+    if (i > toSkip) {
+      for (let index = 9; index <= 28; index++) {
+        // First name on page is nth-child(9), last is 28
+        let currSelector = VIEW_DETAILS_SELECTOR.replace("%s", index.toString());
 
-      await page.waitForSelector(currSelector);
-      await page.evaluate((selector) => {
-        document.querySelector(selector).click();
-      }, currSelector);
-      await page.waitFor(1000);
+        await page.waitForSelector(currSelector);
+        await page.evaluate((selector) => {
+          document.querySelector(selector).click();
+        }, currSelector);
+        await page.waitFor(1000);
 
-      await page.waitForSelector(FIRST_NAME_SELECTOR);
-      await page.waitForSelector(LAST_NAME_SELECTOR);
-      await page.waitForSelector(EMAIL_SELECTOR);
+        await page.waitForSelector(FIRST_NAME_SELECTOR);
+        await page.waitForSelector(LAST_NAME_SELECTOR);
+        await page.waitForSelector(EMAIL_SELECTOR);
 
-      const result = await page.evaluate((FIRST_NAME_SELECTOR, LAST_NAME_SELECTOR, EMAIL_SELECTOR) => {
-          let firstName = document.querySelector(FIRST_NAME_SELECTOR).innerText;
-          let lastName = document.querySelector(LAST_NAME_SELECTOR).innerText;
-          let emailAddress = document.querySelector(EMAIL_SELECTOR).innerText;
-          return {firstName, lastName, emailAddress}
-      }, FIRST_NAME_SELECTOR, LAST_NAME_SELECTOR, EMAIL_SELECTOR);
-      
-      if (i === 0 && index === 9) {
-        console.log('FirstName, LastName, Email');
-      }
-      console.log(result.firstName + ', ' + result.lastName + ', ' + result.emailAddress);
+        const result = await page.evaluate((FIRST_NAME_SELECTOR, LAST_NAME_SELECTOR, EMAIL_SELECTOR) => {
+            let firstName = document.querySelector(FIRST_NAME_SELECTOR).innerText;
+            let lastName = document.querySelector(LAST_NAME_SELECTOR).innerText;
+            let emailAddress = document.querySelector(EMAIL_SELECTOR).innerText;
+            return {firstName, lastName, emailAddress}
+        }, FIRST_NAME_SELECTOR, LAST_NAME_SELECTOR, EMAIL_SELECTOR);
+        
+        if (i === 0 && index === 9) {
+          console.log('FirstName, LastName, Email');
+        }
+        console.log(result.firstName + ', ' + result.lastName + ', ' + result.emailAddress);
 
-      // Go back
-      await page.goBack();
-      await page.waitFor(1000);
-    } 
+        // Go back
+        await page.goBack();
+        await page.waitFor(1000);
+      } 
+    }
     await page.waitForSelector(NEXT_BUTTON_SELECTOR);
     await page.evaluate((selector) => {
       document.querySelector(selector).click();
