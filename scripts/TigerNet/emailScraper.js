@@ -34,6 +34,9 @@ async function run() {
 
   await page.click(STUDENT_BUTTON_SELECTOR);
   await page.waitFor(1000);
+  await page.waitForSelector(USERNAME_SELECTOR);
+  await page.waitForSelector(PASSWORD_SELECTOR);
+  await page.waitForSelector(LOGIN_BUTTON_SELECTOR);
   await page.type(USERNAME_SELECTOR, CREDS.username);
   await page.type(PASSWORD_SELECTOR, CREDS.password);
   await page.click(LOGIN_BUTTON_SELECTOR);
@@ -77,7 +80,7 @@ async function run() {
   await page.waitFor(1500);
 
   let numPages = 35;
-  let toSkip = 5;
+  let toSkip = 6;
 
   for (let i = 1; i <= numPages; i++) {
     if (i > toSkip) {
