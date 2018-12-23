@@ -32,8 +32,8 @@ printEventSupervisors = False
 lines = readFile.readlines()
 numLines = len(lines)
 print numLines
-for i in xrange(numLines):
-    x = lines[i].split('\t')
+for lineNum in xrange(numLines):
+    x = lines[lineNum].split('\t')
     if x[1].strip() == 'events':
         printEventSupervisors = True
     if x[0].strip() == "":
@@ -97,13 +97,12 @@ for i in xrange(numLines):
             printRow = True
 
 if printEventSupervisors:
-    supervisorCount = 0
-    for i in xrange(i, numLines):
-        x = lines[i].split('\t')
-        name, year, event, school = [x[j].strip() for j in range(4)]
+    for supervisorNum in xrange(numLines - lineNum):
+        x = lines[lineNum + supervisorNum].split('\t')
+        name, year, event, school = [x[i].strip() for i in range(4)]
         filename = "-".join([temp.strip().lower() for temp in name.split(" ")])
         
-        if supervisorCount % 3 == 0: print >> writeFile, "\t\t<div class=\"row\">"
+        if supervisorNum % 3 == 0: print >> writeFile, "\t\t<div class=\"row\">"
         
         print >> writeFile, '<div class="col-md-4">\n\
             <ul class="list-group">\n\
@@ -120,10 +119,9 @@ if printEventSupervisors:
             </ul>\n\
           </div>'.format(filename, name, name, year, event, school)
 
-        if supervisorCount % 3 == 2: print >> writeFile, "\t\t</div>"
-        supervisorCount += 1
+        if supervisorNum % 3 == 2: print >> writeFile, "\t\t</div>"
 
-    if supervisorCount % 3 != 2: print >> writeFile, "\t\t</div>"
+    if supervisorNum % 3 != 2: print >> writeFile, "\t\t</div>"
 
 print >> writeFile, "\t</div>"
 
