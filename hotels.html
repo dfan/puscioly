@@ -11,9 +11,9 @@
     <script> 
       $('head').load('header.html', function() {
         // Page-specific information
-        document.title = "Hotels - Princeton University Science Olympiad Invitational"
+        document.title = "Hotels and Travel - Princeton University Science Olympiad Invitational"
         document.querySelector("#canonicalLink").setAttribute("href", "/hotels")
-        document.querySelector("#title_meta").setAttribute("content", "Tournament Information | Hotels")
+        document.querySelector("#title_meta").setAttribute("content", "Tournament Information | Hotels and Travel")
       });
       // wrapped in function so executes after the page is loaded
       $(function(){
@@ -33,7 +33,7 @@
     <div class="container content">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="section-title">Tournament Information</h1>
+          <h1 class="section-title">Hotels and Travel</h1>
           <hr>
 
           <h2 class="section-subtitle">Hotels</h2>
@@ -130,6 +130,47 @@
               </tr>
             </tbody>
           </table>
+
+          <h2 class="section-subtitle" id="travel">Travel</h2>
+          <ul>
+            <li><b>Arriving by Car:</b></li>
+            <ul class = "sub-bullet">
+              <li>Lots 10, 13, 14, 21, 25, and the North Garage are open for free, as long as you leave by the following morning.</li>
+              <li>A map can be found <a href="https://www.princeton.edu/pr/campusmap/PUCampusMap.pdf">here</a> or through search on <a href="https://www.google.com/maps/dir/Current+Location/Princeton+University,+Princeton,+NJ/">Google Maps</a>.</li>
+            </ul>
+            <li><b>Arriving by Plane:</b></li>
+            <ul class = "sub-bullet">
+              <li>We recommend arriving at either Newark Liberty International Airport (EWR) or Philadelphia International Airport (PHL).</li>
+              <li>Both airports are connected by train to Princeton, but EWR is a bit closer.</li>
+            </ul>
+            <li><b>Arriving by Train:</b></li>
+            <ul class = "sub-bullet">
+              <li>Take the NJ Transit Northeast Corridor (NOT Amtrak's Northeast Regional) route to Princeton Junction.</li>
+              <li>Transfer to the "Dinky," which travels between Princeton Junction and Princeton Station (on campus).</li>
+              <li>Princeton Station is your desired final destination.</li>
+              <li>Exact train times and fares can be looked up on the <a href='https://www.njtransit.com/sf/sf_servlet.srv?hdnPageAction=TripPlannerTo' target='_blank'>NJ Transit site</a>.</li>
+              <li><b>From NYC:</b></li>
+              <ul>
+                <li>Take the subway (1/2/3/A/C/E) to NY Penn Station at 34th St and 7th Ave.</li>
+                <li>Take the NJ Transit (NE Corridor) to Princeton Junction (Trenton-bound).</li>
+                <li>Transfer to the "Dinky" upon arriving at Princeton Junction to reach Princeton Station.</li>
+              </ul>
+              <li><b>From Newark Airport (EWR):</b></li>
+              <ul>
+                <li>Follow signs for the AirTrain, the inter-terminal monorail, and take it to the RailLink station.</li>
+                <li>Upon arrival, head up the stairs to the left and cross the bridge to the train station.</li>
+                <li>Take the NJ Transit (NE Corridor) to Princeton Junction (Trenton-bound).</li>
+                <li>Transfer to the "Dinky" upon arriving at Princeton Junction to reach Princeton Station.</li>
+              </ul>
+              <li><b>From Philadelphia (including PHL):</b></li>
+              <ul>
+                <li>Take the train to 30th Street Station (the main station in Philly).</li>
+                <li>Transfer to the SEPTA Trenton Line Regional train to Trenton Transit Center.</li>
+                <li>At Trenton, take the NJ Transit (NE Corridor) to Princeton Junction (Newark/NYC-bound).</li>
+                <li>Transfer to the "Dinky" upon arriving at Princeton Junction to reach Princeton Station.</li>
+              </ul>
+            </ul>
+          </ul>
 
         </div>
       </div>
