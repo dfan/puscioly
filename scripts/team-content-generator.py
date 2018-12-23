@@ -32,8 +32,8 @@ printEventSupervisors = False
 lines = readFile.readlines()
 numLines = len(lines)
 print numLines
-for lineNum in xrange(numLines):
-    x = lines[lineNum].split('\t')
+for organizerNum in xrange(numLines):
+    x = lines[organizerNum].split('\t')
     if x[1].strip() == 'events':
         printEventSupervisors = True
     if x[0].strip() == "":
@@ -97,8 +97,8 @@ for lineNum in xrange(numLines):
             printRow = True
 
 if printEventSupervisors:
-    for supervisorNum in xrange(numLines - lineNum):
-        x = lines[lineNum + supervisorNum].split('\t')
+    for supervisorNum in xrange(numLines - organizerNum):
+        x = lines[organizerNum + supervisorNum].split('\t')
         name, year, event, school = [x[i].strip() for i in range(4)]
         filename = "-".join([temp.strip().lower() for temp in name.split(" ")])
         
