@@ -78,9 +78,9 @@ for organizerNum in xrange(numLines):
 
         if title != "":
             for tit in title:
-                print >> writeFile, "\t\t\t\t\t\t\t\t<div class=\"profile-title\">{}</div>".format(tit.strip())
+                print >> writeFile, "\t\t\t\t\t\t\t\t\t<div class=\"profile-title\">{}</div>".format(tit.strip())
 
-        print >> writeFile, "\t\t\t\t\t\t\t</div> \n\
+        print >> writeFile, "\t\t\t\t\t\t\t\t</div> \n\
               </div> \n\
               <div class=\"collapse profile-bio\" id=\"{}-bio\"> \n\
                 {} \n\
@@ -99,25 +99,26 @@ for organizerNum in xrange(numLines):
 if printEventSupervisors:
     for supervisorNum in xrange(numLines - organizerNum):
         x = lines[organizerNum + supervisorNum].split('\t')
-        name, year, event, school = [x[i].strip() for i in range(4)]
+        name, year, event, team = [x[i].strip() for i in range(4)]
+        school = '({}) '.format(x[4].strip()) if x[4].strip() else ''
         filename = "-".join([temp.strip().lower() for temp in name.split(" ")])
         
         if supervisorNum % 3 == 0: print >> writeFile, "\t\t<div class=\"row\">"
         
-        print >> writeFile, '<div class="col-md-4">\n\
-            <ul class="list-group">\n\
-              <li class="list-group-item auto-cursor">\n\
+        print >> writeFile, '\t\t\t<div class="col-md-4">\n\
+        <ul class="list-group">\n\
+            <li class="list-group-item auto-cursor">\n\
                 <div class="profile-main text-center">\n\
-                  <img src="img/supervisors/{}.jpg" alt="{}">\n\
-                  <div class="description-bottom">\n\
-                    <div class="profile-name">{} \'{}</div>\n\
+                    <img src="img/supervisors/{}.jpg" alt="{}">\n\
+                    <div class="description-bottom">\n\
+                    <div class="profile-name">{} {}\'{}</div>\n\
                     <div class="profile-title">{}</div>\n\
                     <div class="profile-title">{}</div>\n\
-                  </div>\n\
+                    </div>\n\
                 </div>\n\
-              </li>\n\
-            </ul>\n\
-          </div>'.format(filename, name, name, year, event, school)
+            </li>\n\
+        </ul>\n\
+      </div>'.format(filename, name, name, school, year, event, team)
 
         if supervisorNum % 3 == 2: print >> writeFile, "\t\t</div>"
 
