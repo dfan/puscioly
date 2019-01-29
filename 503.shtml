@@ -380,7 +380,7 @@
 
   </div>
     <div class="buttons-container">
-          <a class="border-button" href="#" target="_blank"><span class="fa fa-power-off"></span> View Status Page</a>
+          <a class="border-button" href="#"><span class="fa fa-power-off"></span> View Status Page</a>
         <a class="border-button" href="mailto:scioly@princeton.edu" target="_blank"><span class="fa fa-warning"></span> Report Problem</a>
     </div>
 </div>
