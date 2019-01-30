@@ -134,6 +134,7 @@ ul.sub-bullet {
 }
 
 .dropdown-menu > li > a {
+  text-align: right;
   color: white;
   font-weight: 400;
   padding-top: 10px;
@@ -171,12 +172,12 @@ ul.sub-bullet {
 }
 
 .navbar-default .dropdown-menu > li > a {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-default .dropdown-menu > li > a:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* Dropdown background color */
@@ -281,7 +282,7 @@ ul.sub-bullet {
 
 #navbar > ul > li > a:focus,
 #navbar > ul > li > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #navbar li.divider {
@@ -614,6 +615,9 @@ p {
 }
 
 @media (max-width: 767px) {
+  .dropdown-menu > li > a {
+    text-align: left;
+  }
 
   .container-fluid {
     padding-right: 15px;

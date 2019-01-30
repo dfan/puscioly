@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+      
+    <!-- Needs to be run on a server: python -m SimpleHTTPServer (#### > 1024, default 8000) -->
+    <!-- To kill existing process on port ####: sudo lsof -t -i tcp:#### | xargs kill -9 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script> 
+      $('head').load('header.html', function() {
+        // Page-specific information
+        document.title = "Day Of - Princeton University Science Olympiad Invitational"
+        document.querySelector("#canonicalLink").setAttribute("href", "/dayof")
+        document.querySelector("#title_meta").setAttribute("content", "Tournament Information | Day Of")
+      });
+      // wrapped in function so executes after the page is loaded
+      $(function(){
+        $("nav").load("navbar.html"); 
+        $("footer").load("footer.html");
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Imported navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top"></nav>
+    
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="section-title">Day-Of Information</h1>
+          <hr>
+
+          <div class="table-of-contents">
+            <a href="#docs" class="table-link">Docs</a>
+            <a href="#forms" class="table-link">Forms</a>
+            <a href="#avogadro" class="table-link">Self-Scheduling</a>
+            <a href="#events" class="table-link">Event Info</a>
+            <a href="#logistics" class="table-link">Logistics</a>
+            <a href="#shirts" class="table-link">T-Shirts</a>
+            <a href="#food" class="table-link">Food</a>
+            <a href="#emergency" class="table-link">Emergency</a>
+          </div>
+
+          <h2 class="section-subtitle" id="docs">Documents <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="right" title="Scroll to top" aria-hidden="true"></i></h2>
+          <ul>
+            <li><a href="docs/PUSO2019_Schedule.pdf" target="_blank">Event Schedule</a></li>
+            <li><a href="docs/PUSO2019_TeamNumbers.pdf" target="_blank">Team Numbers</a></li>
+            <!-- <li><a href="docs/PUSO2019_CampusMap.pdf" target="_blank">Campus Map (PDF)</a> |<a href="http://bit.ly/PUSO2019Map" target="_blank">Campus Map (Digital)</a></li> -->
+            <li><a href="http://bit.ly/PUSO2019Map" target="_blank">Campus Map (Digital)</a></li>
+            <!-- <li><a href="docs/PUSO2019_BuildingGuide.pdf" target="_blank">Building Guide</a></li> -->
+            <li><a href="docs/PUSO2019_Buses.pdf" target="_blank">Bus Information</a></li>
+          </ul>
+
+          <h2 class="section-subtitle" id="forms">Required Forms <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="right" title="Scroll to top" aria-hidden="true"></i></h2>
+          <ul>
+            <li>Final Team List: One copy needs to be filled per team; schools sending two teams should thus fill out two copies.
+            <ul class = "sub-bullet">
+              <li><a href="docs/PUSO2019_FinalStudents.pdf" target="_blank">PDF</a> | <a href="docs/PUSO2019_FinalStudents.doc" target="_blank">DOC</a></li>
+            </ul>
+            <li>Vandalism Policy: One copy per school.</li>
+            <ul class = "sub-bullet">
+              <li><a href="docs/PUSO2019_VandalismPolicy.pdf" target="_blank">PDF</a> | <a href="docs/PUSO2019_VandalismPolicy.doc" target="_blank">DOC</a></li>
+            </ul>
+            <li>Risk and Liability Waiver: Each competitor must sign this.</li>
+            <ul class = "sub-bullet">
+              <li><a href="docs/PUSO2019_LiabilityWaiver.pdf" target="_blank">PDF</a> | <a href="docs/PUSO2019_LiabilityWaiver.doc" target="_blank">DOC</a></li>
+            </ul>
+          </ul>
+
+          <h2 class="section-subtitle" id="avogadro">Build/Trial Self-Scheduling <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="right" title="Scroll to top" aria-hidden="true"></i></h2>
+          <ul>
+            <li>Building and trial event self scheduling will be done on <a href="https://app.avogadro.ws/invitational/princeton-c/" target="_blank">Avogadro</a>, starting at <b>6 PM EST on Wednesday, January 23, 2019</b>.</li>
+            <li>Coach emails have already been added to the system, but you will need to claim your account if you do not already have an existing Avogadro account. Otherwise, you should be able to log in and see the self-scheduling slots.</li>
+            <li>To claim your account:</li>
+            <ul class="sub-bullet">
+              <li>Go to <a href="https://app.avogadro.ws/reset">https://app.avogadro.ws/reset</a> and enter the email address you have been receiving our emails from.</li>
+              <li>Follow the link sent to your email to set your password.</li>
+              <li>Log in and you should be able to see the tournament and self-scheduling. Please indicate which events your team(s) are competing in - by default all events are selected as "Competing".</li>
+            </ul>
+            <li>Self-scheduling may only be done on the coach's Avogadro account. Please email us immediately if you are unable to access Avogadro.</li>
+          </ul>
+
+          <h2 class="section-subtitle" id="events">Event Information <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="right" title="Scroll to top" aria-hidden="true"></i></h2>
+          <ul>
+            <li><strong>Wright Stuff:</strong>
+              <ul>
+                <li>The event space is roughly 30 ft high, and the floor is about 45 x 65 ft.</li>
+                <li>See a picture of the room <a href="img/rooms/jrb.jpg">here</a>.</li>
+              </ul>
+            </li>
+            <li><b>Trial Events:</b> We will be running Science Word and Science Quiz Bowl. Both alternates and regular team members may compete in trial events.</li>
+              <ul class = "sub-bullet"> 
+                <li><a href="docs/Science_Word.pdf" target="_blank">Science Word</a></li>
+                <li><a href="docs/Science_Quiz_Bowl.pdf" target="_blank">Science Quiz Bowl</a></li>
+              </ul>
+            <li><b>Reminders (as detailed on competition policies page)</b>:
+              <ul class = "sub-bullet">
+                <li>For events that differentiate content/scoring for different levels of competition, we will be following rules specified at the <b>national</b> level - except build events, which will be scored at the <b>regional</b> level.</li>
+                <li>Competitors must adhere to the code of ethics and policies outlined at <a href="https://www.soinc.org/join/policies" target="_blank">soinc.org/join/policies</a>. Please respect the event supervisors and volunteers who have dedicated their time to help out, as well as the classrooms/labs on campus. Teams will be held responsible and penalized for any misconduct.</li>
+              </ul>
+          </ul>
+
+          <h2 class="section-subtitle" id="logistics">Logistics <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="right" title="Scroll to top" aria-hidden="true"></i></h2>
+          <ul>
+            <li>Team check-in is at <b><a href="https://www.google.com/maps/place/Campus+Club/@40.347571,-74.654436,17z/data=!4m12!1m6!3m5!1s0x89c3e6c379c695e1:0xfe0c497db63b0eeb!2sCampus+Club!8m2!3d40.347571!4d-74.654436!3m4!1s0x89c3e6c379c695e1:0xfe0c497db63b0eeb!8m2!3d40.347571!4d-74.654436?hl=en" target="_blank">Campus Club</a></b> from 6:30 AM - 7:30 AM.</li>
+            <ul class="sub-bullet">
+              <li>As space is limited, please leave promptly after receiving team folders and wristbands.</li>
+              <li>Competitors must wear the provided wristband in order to compete.</li>
+              <li>Each team must submit the final team roster, and a signed vandalism form + signed liability form (see "Required Forms" section above) for each competitor. Any team that fails to do so will be disqualified from competing.</li>
+            </ul>
+            <li>The awards ceremony will be held in the <b><a href="https://www.google.com/maps/place/Richardson+Auditorium/@40.3483263,-74.6628096,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3e6c47607dbcd:0x910b7cd235e1fcbb!8m2!3d40.3483222!4d-74.6606209" target="_blank">Richardson Auditorium</a></b> in Alexander Hall starting at 6:15 PM. Doors will open at 5:45 PM. Please arrive in advance so that the ceremony can proceed according to schedule.</li>
+            <li>Organizer headquarters (and t-shirt sales) will be at Lewis 138.</li>
+          </ul>
+
+          <h2 class="section-subtitle" id="shirts">T-Shirts <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="right" title="Scroll to top" aria-hidden="true"></i></h2>
+          <ul>
+            <li>The T-shirt pre-order form is no longer available</li>
+            <li>T-shirts can be purchased ($10) on the day of the competition at Lewis 138 after Session 1 is over.</li>
+            <li>Click <a href="img/tshirt.png" target="_blank">here</a> to see the T-shirt design.</li>
+          </ul>
+         
+          <h2 class="section-subtitle" id="food">Food <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="right" title="Scroll to top" aria-hidden="true"></i></h2>
+          <ul>
+            <li>The pizza order form is no longer available.</li>
+            <li>There are many other vendors and restaurants near campus</li>
+            <li>Check the <a href="http://bit.ly/PUSO2019Map" target="_blank">campus map</a> for student favorites.</li>
+          </ul>
+          <div>The pizza order form is no longer available, but there are plenty of other vendors and restaurants that your team can buy food from on the day of the competition!</div>
+          
+          <h2 class="section-subtitle" id="emergency">Emergency <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="right" title="Scroll to top" aria-hidden="true"></i></h2>
+          <ul>
+            <li>In the event of a emergency, call Princeton Public Safety at <a href="tel:609-258-3333">609-258-3333</a>. They will be able to contact the appropriate medical responders.</li>
+            <li>In the case of a tournament-related emergency, call tournament co-director Linus Wang at <a href="tel:650-862-7955">650-862-7955</a>.</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Imported Footer -->
+    <footer class="footer-inverse"></footer>
+
+    <!-- Latest compiled and minified JavaScript: must load JQuery before Bootstrap -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/be16867854.js"></script>
+    <script>
+      $(document).ready(function(){
+        /* Hover animation for scroll-up tooltip textbox */
+        $('[data-toggle="tooltip"]').tooltip({
+          animation: true,
+          delay: {show: 25, hide: 25}
+        });
+        /* Smooth scroll for any element with id "scroll-top" */
+        $("body").on("click", "#scroll-top", function(){
+          $('html, body').animate({ scrollTop: 0 }, "250");
+        });
+        /* Smooth scroll for any link in the table of contents on team page */
+        $("body").on("click", ".table-link", function(){
+          event.preventDefault(); // Disable the link set in the href
+          var $anchor = $(this).attr('href');
+          $('html, body').animate({ scrollTop: $($anchor).offset().top }, "275");
+        });
+      })
+    </script>
+  </body>
+
+</html>

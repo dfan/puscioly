@@ -11,9 +11,9 @@
     <script> 
       $('head').load('header.html', function() {
         // Page-specific information
-        document.title = "Hotels - Princeton University Science Olympiad Invitational"
+        document.title = "Hotels and Travel - Princeton University Science Olympiad Invitational"
         document.querySelector("#canonicalLink").setAttribute("href", "/hotels")
-        document.querySelector("#title_meta").setAttribute("content", "Tournament Information | Hotels")
+        document.querySelector("#title_meta").setAttribute("content", "Tournament Information | Hotels and Travel")
       });
       // wrapped in function so executes after the page is loaded
       $(function(){
@@ -33,11 +33,146 @@
     <div class="container content">
       <div class="row">
         <div class="col-lg-12">
-          <h1 class="section-title">Tournament Information</h1>
+          <h1 class="section-title">Hotels and Travel</h1>
           <hr>
 
           <h2 class="section-subtitle">Hotels</h2>
-          <p>We partner with several local hotels to provide competing teams with a comfortable stay at the lowest possible prices. More information coming soon!</p>
+          <p>This year, we have an <strong>exclusive</strong> deal with Hyatt Regency - Princeton!</p>
+          <table id="hotels-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th>Hotel Name</th>
+                <th>Distance to Campus</th>
+                <th>Price per Room (pre-tax)</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+            <!-- Sorting provided by data-order field -->
+            <tbody>
+              <tr>
+                <td><a href="https://www.hyatt.com/en-US/hotel/new-jersey/hyatt-regency-princeton/princ" target="_blank">Hyatt Regency - Princeton</a></td>
+                <td>2.0 miles 
+                  <br>(Shuttle Provided)</td>
+                <td data-order="59">
+                <ul>
+                  <li>Standard Guest rooms, Doubles, Kings</li>
+                  <li>Contact <a href="mailto:caitlin.mariano@hyatt.com">Caitlin Mariano</a> directly (~$115).</li>
+                </td>
+                <td><a href="https://www.google.com/maps/place/Hyatt+Regency+Princeton" target="_blank">102 Carnegie Center, Princeton, NJ 08540</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 class="section-subtitle">Other Hotels</h2>
+          <table id="hotels-table" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th>Hotel Name</th>
+                <th>Distance to Campus</th>
+                <th>Price per Room (pre-tax)</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+            <!-- Sorting provided by data-order field -->
+            <tbody>
+              <tr>
+                <td><a href="http://doubletree3.hilton.com/en/hotels/new-jersey/doubletree-by-hilton-hotel-princeton-PCTDTDT/index.html" target="_blank">DoubleTree by Hilton Hotel Princeton</a></td>
+                <td>3.6 miles
+                  <br>(Shuttle Provided)</td>
+                <td data-order="105">
+                <ul>
+                  <li><strong>Special rate:</strong> $99.00</li>
+                  <li>Contact Stacie Fisher <a href="tel:609.945.2512">609.945.2512</a> or <a href="mailto:Stacie.Fisher@Hilton.com">Stacie.Fisher@Hilton.com</a></li>
+                </td>
+                <td><a href="https://www.google.com/maps/place/DoubleTree+By+Hilton+Hotel+Princeton/" target="_blank">4355 US-1, Princeton, NJ 08540</a></td>
+              </tr>
+              
+              <tr>
+                <td><a href="http://hamptoninn3.hilton.com/en/hotels/new-jersey/hampton-inn-princeton-PTNHHHX/index.html" target="_blank">Hampton Inn Princeton</a></td>
+                <td>3.4 miles
+                  <br>(Shuttle by request)</td>
+                <td data-order="109">
+                <ul>
+                  <li>Single King Bed: $109</li>
+                </td>
+                <td><a href="https://www.google.com/maps/place/Hampton+Inn+Princeton/" target="_blank">4385 US-1, Princeton, NJ 08540</a></td>
+              </tr>
+
+              <tr>
+                <td><a href="https://www.ihg.com/crowneplaza/hotels/us/en/plainsboro/ttnpl/hoteldetail" target="_blank">Crowne Plaza Princeton</a></td>
+                <td>3.5 miles</td>
+                <td data-order="59">
+                <ul>
+                  <li>Single King Bed: $103.00</li>
+                  <li>Two Queen Beds: $103.00</li>
+                </td>
+                <td><a href="https://www.google.com/maps/place/Crowne+Plaza+Princeton+-+Conference+Center/" target="_blank">900 Scudders Mill Road, Plainsboro Township, NJ 08536</a></td>
+              </tr>
+
+              <tr>
+                <td><a href="https://www.redroof.com/property/nj/lawrenceville/RRI111" target="_blank">Red Roof Inn Princeton - Ewing</a></td>
+                <td>4.8 miles</td>
+                <td data-order="59">
+                <ul>
+                  <li>Two Full Beds: $80 (4 people)</li>
+                  <li>Single King Bed: $69.00</li>
+                </td>
+                <td><a href="https://www.google.com/maps/place/Red+Roof+Inn+Princeton+-+Ewing/" target="_blank">3203 Brunswick Pike, Lawrenceville, NJ 08648</a></td>
+              </tr>
+
+              <tr>
+                <td><a href="https://www.wyndhamhotels.com/days-inn/monmouth-junction-new-jersey/days-inn-monmouth-junction-princeton/overview" target="_blank">Days Inn Monmouth Junction</a></td>
+                <td>6.8 miles</td>
+                <td data-order="60">
+                <ul>
+                  <li>Two Queen Beds: $60</li>
+                </td>
+                <td><a href="https://www.google.com/maps/place/Days+Inn+Monmouth+Junction+Princeton" target="_blank">208 New Rd, Monmouth Junction, NJ 08852</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 class="section-subtitle" id="travel">Travel</h2>
+          <ul>
+            <li><b>Arriving by Car:</b></li>
+            <ul class = "sub-bullet">
+              <li>Lots 10, 13, 14, 21, 25, and the North Garage are open for free, as long as you leave by the following morning.</li>
+              <li>A map can be found <a href="https://www.princeton.edu/pr/campusmap/PUCampusMap.pdf" target="_blank">here</a> or through search on <a href="https://www.google.com/maps/dir/Current+Location/Princeton+University,+Princeton,+NJ/" target="_blank">Google Maps</a>.</li>
+            </ul>
+            <li><b>Arriving by Plane:</b></li>
+            <ul class = "sub-bullet">
+              <li>We recommend arriving at either Newark Liberty International Airport (EWR) or Philadelphia International Airport (PHL).</li>
+              <li>Both airports are connected by train to Princeton, but EWR is a bit closer.</li>
+            </ul>
+            <li><b>Arriving by Train:</b></li>
+            <ul class = "sub-bullet">
+              <li>Take the NJ Transit Northeast Corridor (NOT Amtrak's Northeast Regional) route to Princeton Junction.</li>
+              <li>Transfer to the "Dinky," which travels between Princeton Junction and Princeton Station (on campus).</li>
+              <li>Princeton Station is your desired final destination.</li>
+              <li>Exact train times and fares can be looked up on the <a href='https://www.njtransit.com/sf/sf_servlet.srv?hdnPageAction=TripPlannerTo' target='_blank'>NJ Transit site</a>.</li>
+              <li><b>From NYC:</b></li>
+              <ul>
+                <li>Take the subway (1/2/3/A/C/E) to NY Penn Station at 34th St and 7th Ave.</li>
+                <li>Take the NJ Transit (NE Corridor) to Princeton Junction (Trenton-bound).</li>
+                <li>Transfer to the "Dinky" upon arriving at Princeton Junction to reach Princeton Station.</li>
+              </ul>
+              <li><b>From Newark Airport (EWR):</b></li>
+              <ul>
+                <li>Follow signs for the AirTrain, the inter-terminal monorail, and take it to the RailLink station.</li>
+                <li>Upon arrival, head up the stairs to the left and cross the bridge to the train station.</li>
+                <li>Take the NJ Transit (NE Corridor) to Princeton Junction (Trenton-bound).</li>
+                <li>Transfer to the "Dinky" upon arriving at Princeton Junction to reach Princeton Station.</li>
+              </ul>
+              <li><b>From Philadelphia (including PHL):</b></li>
+              <ul>
+                <li>Take the train to 30th Street Station (the main station in Philly).</li>
+                <li>Transfer to the SEPTA Trenton Line Regional train to Trenton Transit Center.</li>
+                <li>At Trenton, take the NJ Transit (NE Corridor) to Princeton Junction (Newark/NYC-bound).</li>
+                <li>Transfer to the "Dinky" upon arriving at Princeton Junction to reach Princeton Station.</li>
+              </ul>
+            </ul>
+          </ul>
+
         </div>
       </div>
     </div>
